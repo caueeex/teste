@@ -5,44 +5,47 @@
     box-sizing: border-box;
 }
 
-/* Psychology Landing Page Design System - Cores acolhedoras */
+/* Psychology Landing Page Design System - Cores aconchegantes e acolhedoras */
 :root {
-    /* Paleta principal - verde sage e neutros quentes */
-    --background: hsl(33, 36%, 98%);
-    --foreground: hsl(156, 8%, 17%);
-    --card: hsl(0, 0%, 100%);
-    --card-foreground: hsl(156, 8%, 17%);
-    --primary: hsl(145, 25%, 45%);
-    --primary-foreground: hsl(0, 0%, 100%);
-    --secondary: hsl(145, 15%, 92%);
-    --secondary-foreground: hsl(145, 25%, 25%);
-    --muted: hsl(33, 20%, 95%);
-    --muted-foreground: hsl(156, 8%, 45%);
-    --accent: hsl(33, 25%, 88%);
-    --accent-foreground: hsl(156, 8%, 17%);
-    --border: hsl(145, 15%, 88%);
-    --input: hsl(145, 15%, 88%);
+    /* Paleta principal - marronzinho, branco e tons de nude */
+    --background: hsl(40, 30%, 98%); /* Branco quente */
+    --foreground: hsl(25, 20%, 20%); /* Marrom escuro para texto */
+    --card: hsl(0, 0%, 100%); /* Branco puro para cards */
+    --card-foreground: hsl(25, 20%, 20%); /* Texto escuro nos cards */
+    --primary: hsl(25, 35%, 35%); /* Marronzinho principal */
+    --primary-foreground: hsl(0, 0%, 100%); /* Branco para texto sobre marronzinho */
+    --secondary: hsl(35, 15%, 88%); /* Bege suave */
+    --secondary-foreground: hsl(25, 20%, 20%); /* Texto escuro sobre bege */
+    --muted: hsl(35, 25%, 95%); /* Creme */
+    --muted-foreground: hsl(25, 15%, 45%); /* Texto suave */
+    --accent: hsl(30, 20%, 90%); /* Nude suave */
+    --accent-foreground: hsl(25, 20%, 20%); /* Texto escuro sobre nude */
+    --border: hsl(35, 15%, 88%); /* Bordas suaves */
+    --input: hsl(35, 15%, 88%); /* Inputs suaves */
     --radius: 0.75rem;
     
-    /* Cores customizadas do tema psicologia */
-    --sage: hsl(145, 25%, 45%);
-    --sage-light: hsl(145, 20%, 65%);
-    --sage-lighter: hsl(145, 15%, 85%);
-    --warm-white: hsl(33, 36%, 98%);
-    --cream: hsl(33, 25%, 95%);
-    --soft-peach: hsl(15, 35%, 92%);
+    /* Cores customizadas do tema aconchegante */
+    --marronzinho: hsl(25, 35%, 35%); /* Marronzinho principal */
+    --marronzinho-light: hsl(25, 30%, 50%); /* Marronzinho mais claro */
+    --marronzinho-lighter: hsl(25, 25%, 70%); /* Marronzinho bem claro */
+    --warm-white: hsl(40, 30%, 98%); /* Branco quente */
+    --cream: hsl(35, 25%, 95%); /* Creme */
+    --soft-nude: hsl(30, 20%, 90%); /* Nude suave */
+    --warm-beige: hsl(35, 15%, 85%); /* Bege quente */
+    --soft-brown: hsl(25, 20%, 80%); /* Marrom suave */
     
-    /* Gradientes */
-    --gradient-sage: linear-gradient(135deg, var(--sage) 0%, var(--sage-light) 100%);
+    /* Gradientes aconchegantes */
+    --gradient-marronzinho: linear-gradient(135deg, var(--marronzinho) 0%, var(--marronzinho-light) 100%);
     --gradient-warm: linear-gradient(135deg, var(--warm-white) 0%, var(--cream) 100%);
-    --gradient-soft: linear-gradient(180deg, var(--background) 0%, var(--sage-lighter) 100%);
+    --gradient-soft: linear-gradient(180deg, var(--background) 0%, var(--warm-beige) 100%);
+    --gradient-nude: linear-gradient(135deg, var(--soft-nude) 0%, var(--warm-beige) 100%);
     
-    /* Sombras */
-    --shadow-soft: 0 4px 20px hsla(145, 25%, 45%, 0.08);
-    --shadow-card: 0 2px 12px hsla(145, 25%, 45%, 0.05);
-    --shadow-hover: 0 8px 32px hsla(145, 25%, 45%, 0.12);
+    /* Sombras suaves e aconchegantes */
+    --shadow-soft: 0 4px 20px hsla(25, 35%, 35%, 0.08);
+    --shadow-card: 0 2px 12px hsla(25, 35%, 35%, 0.05);
+    --shadow-hover: 0 8px 32px hsla(25, 35%, 35%, 0.12);
     
-    /* Transições */
+    /* Transições suaves e aconchegantes */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-gentle: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
@@ -53,12 +56,14 @@ html {
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.7;
     background-color: var(--background);
     color: var(--foreground);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    letter-spacing: -0.01em;
 }
 
 .container {
@@ -79,64 +84,112 @@ body {
 .shadow { box-shadow: var(--shadow-card); }
 .shadow-lg { box-shadow: var(--shadow-hover); }
 
-/* Feather Icons - Garantir visibilidade e renderização */
+/* Feather Icons - Estilos básicos para renderização correta */
 [data-feather] {
     display: inline-block !important;
-    vertical-align: middle;
-    fill: currentColor;
-    stroke: currentColor;
-    stroke-width: 2;
-    stroke-linecap: round;
-    stroke-linejoin: round;
+    vertical-align: middle !important;
     opacity: 1 !important;
     visibility: visible !important;
+    width: auto !important;
+    height: auto !important;
 }
 
-/* Fallback para ícones que não carregaram */
-[data-feather]:not(svg) {
-    min-width: 1em;
-    min-height: 1em;
-    background-color: currentColor;
-    mask: none;
-    -webkit-mask: none;
-}
-
-/* Ícones em cards de serviços */
-.service-card [data-feather],
-.benefit-card [data-feather] {
-    width: 100% !important;
-    height: 100% !important;
-    max-width: 100% !important;
-    max-height: 100% !important;
-    display: block !important;
-}
-
-/* Garantir que ícones SVG sejam sempre visíveis */
+/* Garantir que os ícones SVG sejam renderizados corretamente */
 [data-feather] svg {
     display: block !important;
-    width: 100% !important;
-    height: 100% !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-}
-
-/* Regras específicas para ícones específicos */
-[data-feather="activity"],
-[data-feather="eye"] {
-    display: inline-block !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-}
-
-[data-feather="activity"] svg,
-[data-feather="eye"] svg {
-    display: block !important;
-    width: 100% !important;
-    height: 100% !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-    fill: currentColor !important;
+    width: 1em !important;
+    height: 1em !important;
+    fill: none !important;
     stroke: currentColor !important;
+    stroke-width: 2 !important;
+    stroke-linecap: round !important;
+    stroke-linejoin: round !important;
+    max-width: none !important;
+    max-height: none !important;
+}
+
+/* Sobrescrever qualquer regra do Tailwind que possa estar interferindo */
+[data-feather].w-6,
+[data-feather].h-6,
+[data-feather].w-5,
+[data-feather].h-5,
+[data-feather].w-4,
+[data-feather].h-4,
+[data-feather].w-8,
+[data-feather].h-8 {
+    width: auto !important;
+    height: auto !important;
+}
+
+/* Garantir que os ícones nos cards tenham o tamanho correto */
+.service-card [data-feather],
+.benefit-card [data-feather] {
+    width: auto !important;
+    height: auto !important;
+    max-width: none !important;
+    max-height: none !important;
+}
+
+/* Regra geral para todos os ícones - sobrescrever qualquer conflito */
+i[data-feather] {
+    background: none !important;
+    background-color: transparent !important;
+    color: inherit !important;
+    position: relative !important;
+}
+
+/* Garantir que os ícones SVG tenham o comportamento correto */
+i[data-feather] svg {
+    background: none !important;
+    background-color: transparent !important;
+    position: relative !important;
+    z-index: 1 !important;
+}
+
+/* Forçar a renderização correta dos ícones - sobrescrever qualquer regra conflitante */
+i[data-feather]:before,
+i[data-feather]:after {
+    display: none !important;
+    content: none !important;
+}
+
+/* Garantir que os ícones não tenham pseudo-elementos interferindo */
+i[data-feather] * {
+    background: none !important;
+    background-color: transparent !important;
+}
+
+/* Regra final para garantir que os ícones sejam renderizados corretamente */
+i[data-feather] {
+    all: unset !important;
+    display: inline-block !important;
+    vertical-align: middle !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    width: auto !important;
+    height: auto !important;
+    background: none !important;
+    background-color: transparent !important;
+    color: inherit !important;
+    position: relative !important;
+}
+
+i[data-feather] svg {
+    all: unset !important;
+    display: block !important;
+    width: 1em !important;
+    height: 1em !important;
+    fill: none !important;
+    stroke: currentColor !important;
+    stroke-width: 2 !important;
+    stroke-linecap: round !important;
+    stroke-linejoin: round !important;
+    max-width: none !important;
+    max-height: none !important;
+    background: none !important;
+    background-color: transparent !important;
+    position: relative !important;
+    z-index: 1 !important;
 }
 
 /* Header */
@@ -339,18 +392,19 @@ header {
 
 /* Sections */
 section {
-    padding: 5rem 0;
+    padding: 6rem 0;
 }
 
 .section-header {
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
 }
 
 .section-header h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
+    font-size: 2.75rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
 }
 
 .section-divider {
@@ -362,19 +416,21 @@ section {
 }
 
 .section-header p {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     color: var(--muted-foreground);
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
+    line-height: 1.8;
 }
 
 /* Cards */
 .card {
     background: white;
-    border-radius: var(--radius);
+    border-radius: calc(var(--radius) + 0.25rem);
     box-shadow: var(--shadow-card);
     transition: var(--transition-smooth);
     overflow: hidden;
+    border: 1px solid var(--border);
 }
 
 .card:hover {
@@ -404,7 +460,7 @@ section {
     justify-content: center;
     width: 3rem;
     height: 3rem;
-    background: hsla(145, 25%, 45%, 0.1);
+            background: hsla(25, 35%, 35%, 0.1);
     border-radius: var(--radius);
     color: var(--primary);
 }
@@ -542,7 +598,7 @@ section {
 }
 
 .quote-icon {
-    color: hsla(145, 25%, 45%, 0.2);
+            color: hsla(25, 35%, 35%, 0.2);
     width: 2rem;
     height: 2rem;
 }
@@ -661,7 +717,7 @@ section {
 .form-textarea:focus {
     outline: none;
     border-color: var(--primary);
-    box-shadow: 0 0 0 3px hsla(145, 25%, 45%, 0.1);
+    box-shadow: 0 0 0 3px hsla(25, 35%, 35%, 0.1);
 }
 
 .form-textarea {
@@ -1037,20 +1093,20 @@ footer {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: hsl(145, 25%, 45%);
+    background: hsl(25, 35%, 35%);
     border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: hsl(145, 25%, 35%);
+    background: hsl(25, 35%, 25%);
 }
 
 /* Focus styles for form elements */
 .form-input:focus,
 .form-textarea:focus {
     outline: none;
-    border-color: hsl(145, 25%, 45%);
-    box-shadow: 0 0 0 3px hsla(145, 25%, 45%, 0.1);
+    border-color: hsl(25, 35%, 35%);
+    box-shadow: 0 0 0 3px hsla(25, 35%, 35%, 0.1);
 }
 
 /* Mobile menu animations */
@@ -1077,7 +1133,7 @@ footer {
 
 .card-hover:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 32px hsla(145, 25%, 45%, 0.12);
+    box-shadow: 0 8px 32px hsla(25, 35%, 35%, 0.12);
 }
 
 /* Custom button animations */
@@ -1087,7 +1143,7 @@ footer {
 
 .btn-animate:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 24px hsla(145, 25%, 45%, 0.2);
+    box-shadow: 0 8px 24px hsla(25, 35%, 35%, 0.2);
 }
 
 /* Loading spinner animation */
@@ -1111,7 +1167,7 @@ footer {
 
 /* Custom focus ring for accessibility */
 .focus-ring:focus {
-    outline: 2px solid hsl(145, 25%, 45%);
+    outline: 2px solid hsl(25, 35%, 35%);
     outline-offset: 2px;
 }
 
@@ -1204,26 +1260,26 @@ footer {
 
 /* Custom shadows */
 .shadow-soft {
-    box-shadow: 0 4px 20px hsla(145, 25%, 45%, 0.08);
+    box-shadow: 0 4px 20px hsla(25, 35%, 35%, 0.08);
 }
 
 .shadow-card {
-    box-shadow: 0 2px 12px hsla(145, 25%, 45%, 0.05);
+    box-shadow: 0 2px 12px hsla(25, 35%, 35%, 0.05);
 }
 
 .shadow-hover {
-    box-shadow: 0 8px 32px hsla(145, 25%, 45%, 0.12);
+    box-shadow: 0 8px 32px hsla(25, 35%, 35%, 0.12);
 }
 
 /* Custom gradients */
-.gradient-sage {
-    background: linear-gradient(135deg, hsl(145, 25%, 45%) 0%, hsl(145, 20%, 65%) 100%);
+.gradient-marronzinho {
+    background: linear-gradient(135deg, hsl(25, 35%, 35%) 0%, hsl(25, 30%, 50%) 100%);
 }
 
 .gradient-warm {
-    background: linear-gradient(135deg, hsl(33, 36%, 98%) 0%, hsl(33, 25%, 95%) 100%);
+    background: linear-gradient(135deg, hsl(40, 30%, 98%) 0%, hsl(35, 25%, 95%) 100%);
 }
 
 .gradient-soft {
-    background: linear-gradient(180deg, hsl(33, 36%, 98%) 0%, hsl(145, 15%, 85%) 100%);
+    background: linear-gradient(180deg, hsl(40, 30%, 98%) 0%, hsl(35, 15%, 85%) 100%);
 }

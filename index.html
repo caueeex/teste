@@ -4,32 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dra. Maria Silva - Psicóloga | Terapia Cognitivo-Comportamental SP</title>
+    <title>Psicóloga Nicolly Contro Ferreira | Terapia Cognitivo-Comportamental São José dos Campos</title>
     <meta name="description"
-        content="Psicóloga especialista em Terapia Cognitivo-Comportamental. Atendimento presencial e online em São Paulo. Agende sua consulta para ansiedade, depressão e terapia de casal.">
+        content="Psicóloga especialista em Terapia Cognitivo-Comportamental. Atendimento presencial e online em São José dos Campos. Agende sua consulta para ansiedade, depressão e desenvolvimento pessoal.">
     <meta name="keywords"
-        content="psicóloga são paulo, terapia cognitivo comportamental, psicoterapia online, tratamento ansiedade, terapia de casal, psicóloga vila madalena">
-    <meta name="author" content="Dra. Maria Silva Santos - CRP 06/123456">
-    
+        content="psicóloga são josé dos campos, terapia cognitivo comportamental, psicoterapia online, tratamento ansiedade, psicóloga centro, psicóloga sp">
+    <meta name="author" content="Psicóloga Nicolly Contro Ferreira - CRP 06/202060">
+
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://dramariasilva.com.br">
-    
+    <link rel="canonical" href="https://psicologanicolly.com.br">
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://dramariasilva.com.br">
-    <meta property="og:title" content="Dra. Maria Silva - Psicóloga Especialista em TCC | São Paulo">
+    <meta property="og:url" content="https://psicologanicolly.com.br">
+    <meta property="og:title" content="Psicóloga Nicolly Contro Ferreira - Especialista em TCC | São José dos Campos">
     <meta property="og:description"
-        content="Acolhimento e escuta especializada para uma vida mais equilibrada. Atendimento psicológico presencial e online em São Paulo.">
-    <meta property="og:image" content="https://dramariasilva.com.br/og-image.jpg">
+        content="Acolhimento e escuta especializada para uma vida mais equilibrada. Atendimento psicológico presencial e online em São José dos Campos.">
+    <meta property="og:image" content="https://psicologanicolly.com.br/og-image.jpg">
     <meta property="og:locale" content="pt_BR">
-    
+
     <!-- Twitter Card -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://dramariasilva.com.br">
-    <meta property="twitter:title" content="Dra. Nicolly Ferreira - Psicóloga Especialista em TCC">
+    <meta property="twitter:url" content="https://psicologanicolly.com.br">
+    <meta property="twitter:title" content="Psicóloga Nicolly Contro Ferreira - Especialista em TCC">
     <meta property="twitter:description"
-        content="Acolhimento e escuta especializada para uma vida mais equilibrada. Atendimento psicológico presencial e online em São Paulo.">
-    <meta property="twitter:image" content="https://dramariasilva.com.br/og-image.jpg">
+        content="Acolhimento e escuta especializada para uma vida mais equilibrada. Atendimento psicológico presencial e online em São José dos Campos.">
+    <meta property="twitter:image" content="https://psicologanicolly.com.br/og-image.jpg">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-branco.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-branco.png">
+
+    <!-- Microsoft Tiles -->
+    <meta name="msapplication-TileColor" content="#8B6B4A">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml">
+    <meta name="theme-color" content="#8B6B4A">
+
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -37,20 +52,21 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: 'hsl(145, 25%, 45%)',
-                        'primary-light': 'hsl(145, 20%, 65%)',
-                        'primary-lighter': 'hsl(145, 15%, 85%)',
-                        sage: 'hsl(145, 25%, 45%)',
-                        'sage-light': 'hsl(145, 20%, 65%)',
-                        'sage-lighter': 'hsl(145, 15%, 85%)',
-                        'warm-white': 'hsl(33, 36%, 98%)',
-                        cream: 'hsl(33, 25%, 95%)',
-                        'soft-peach': 'hsl(15, 35%, 92%)',
-                        muted: 'hsl(156, 8%, 45%)',
-                        border: 'hsl(145, 15%, 88%)',
+                        primary: 'hsl(25, 35%, 35%)', // Marronzinho principal
+                        'primary-light': 'hsl(25, 30%, 50%)', // Marronzinho mais claro
+                        'primary-lighter': 'hsl(25, 25%, 70%)', // Marronzinho bem claro
+                        'warm-white': 'hsl(40, 30%, 98%)', // Branco quente
+                        cream: 'hsl(35, 25%, 95%)', // Creme
+                        'soft-nude': 'hsl(30, 20%, 90%)', // Nude suave
+                        'warm-beige': 'hsl(35, 15%, 85%)', // Bege quente
+                        'soft-brown': 'hsl(25, 20%, 80%)', // Marrom suave
+                        muted: 'hsl(25, 15%, 45%)', // Texto suave
+                        border: 'hsl(35, 15%, 88%)', // Bordas suaves
+                        'text-dark': 'hsl(25, 20%, 20%)', // Texto escuro
+                        'text-medium': 'hsl(25, 15%, 35%)', // Texto médio
                     },
                     fontFamily: {
-                        sans: ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
                     },
                     spacing: {
                         '18': '4.5rem',
@@ -62,9 +78,9 @@
                         '3xl': '1.5rem',
                     },
                     boxShadow: {
-                        'soft': '0 4px 20px hsla(145, 25%, 45%, 0.08)',
-                        'card': '0 2px 12px hsla(145, 25%, 45%, 0.05)',
-                        'hover': '0 8px 32px hsla(145, 25%, 45%, 0.12)',
+                        'soft': '0 4px 20px hsla(25, 35%, 35%, 0.08)',
+                        'card': '0 2px 12px hsla(25, 35%, 35%, 0.05)',
+                        'hover': '0 8px 32px hsla(25, 35%, 35%, 0.12)',
                     }
                 }
             }
@@ -75,28 +91,28 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
-    
+
     <!-- Structured Data for SEO -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "ProfessionalService",
-      "name": "Dra. Maria Silva Santos - Psicóloga",
-      "image": "https://dramariasilva.com.br/og-image.jpg",
-      "description": "Psicóloga clínica especializada em Terapia Cognitivo-Comportamental, oferecendo atendimento presencial e online em São Paulo.",
+      "name": "Psicóloga Nicolly Contro Ferreira",
+      "image": "https://psicologanicolly.com.br/og-image.jpg",
+      "description": "Psicóloga clínica especializada em Terapia Cognitivo-Comportamental, oferecendo atendimento presencial e online em São José dos Campos.",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Rua das Flores, 123",
-        "addressLocality": "São Paulo",
+        "streetAddress": "Rua Antônio Major Domingues, 357",
+        "addressLocality": "São José dos Campos",
         "addressRegion": "SP",
-        "postalCode": "05434-000",
+        "postalCode": "12210-000",
         "addressCountry": "BR"
       },
-      "telephone": "+55-11-99999-9999",
-      "url": "https://dramariasilva.com.br",
-      "openingHours": ["Mo-Fr 08:00-18:00", "Sa 08:00-12:00"],
+      "telephone": "+55-12-98897-8104",
+      "url": "https://psicologanicolly.com.br",
+      "openingHours": ["Mo-Fr 20:00-20:00", "Sa 09:00-12:00"],
       "serviceType": "Psychological Services",
-      "areaServed": "São Paulo"
+      "areaServed": "São José dos Campos"
     }
     </script>
 </head>
@@ -108,8 +124,9 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16 lg:h-20">
                 <div class="flex-shrink-0">
-                    <h1 class="text-lg lg:text-xl font-semibold text-primary mb-1">Dra. Maria Silva</h1>
-                    <p class="text-xs text-muted">CRP 06/123456</p>
+                    <h1 class="text-lg lg:text-xl font-semibold text-primary mb-1">Psicóloga Nicolly Contro Ferreira
+                    </h1>
+                    <p class="text-xs text-muted">CRP 06/202060</p>
                 </div>
 
                 <!-- Desktop Navigation -->
@@ -168,18 +185,20 @@
 
     <!-- Hero Section -->
     <section id="inicio"
-        class="pt-24 lg:pt-32 pb-16 lg:pb-24 bg-gradient-to-b from-warm-white to-primary-lighter/30 min-h-screen flex items-center">
+        class="pt-24 lg:pt-32 pb-16 lg:pb-24 bg-gradient-to-b from-warm-white to-soft-nude/30 min-h-screen flex items-center">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16 items-center">
                 <!-- Hero Content -->
-                <div class="text-center lg:text-left space-y-6 lg:space-y-8">
-                    <h1 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
+                <div class="text-center lg:text-left space-y-8 lg:space-y-8">
+                    <h1 class="text-3xl sm:text-4xl lg:text-6xl xl:text-5xl font-bold leading-tight" style="
+    margin-top: 50px;
+">
                         Acolhimento e escuta para uma<br>
-                        <span class="text-primary" id="typewriter-text">vida mais equilibrada</span>
+                        <span class="text-primary" id="typewriter-text">c</span>
                         <span class="text-primary animate-pulse">|</span>
                     </h1>
                     <p class="text-lg lg:text-xl text-muted max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-                        Ofereco um espaço seguro e acolhedor para você explorar seus sentimentos,
+                        Ofereço um espaço seguro e acolhedor para você explorar seus sentimentos,
                         superar desafios e descobrir seu potencial. Juntos, construiremos um caminho
                         em direção ao seu bem-estar emocional.
                     </p>
@@ -224,17 +243,17 @@
                     <!-- Trust Indicators -->
                     <div
                         class="flex flex-col sm:flex-row gap-3 lg:gap-6 text-sm text-muted justify-center lg:justify-start">
-                        <div class="flex items-center gap-2">✓ CRP 06/123456 • Registro ativo</div>
-                        <div class="flex items-center gap-2">✓ +8 anos de experiência</div>
-                        <div class="flex items-center gap-2">✓ +500 pacientes atendidos</div>
+                        <div class="flex items-center gap-2">✓ CRP 06/202060 • Registro ativo</div>
+                        <div class="flex items-center gap-2">✓ 1 ano e 4 meses de experiência</div>
+                        <div class="flex items-center gap-2">✓ Atendimento personalizado</div>
                     </div>
                 </div>
 
                 <!-- Hero Image -->
                 <div class="flex justify-center lg:justify-end">
                     <div class="relative">
-                    <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                            alt="Dra. Maria Silva - Psicóloga especialista em terapia cognitivo-comportamental"
+                        <img src="img/nicolly-foto.jpg"
+                            alt="Psicóloga Nicolly Contro Ferreira - Especialista em terapia cognitivo-comportamental"
                             class="w-full max-w-sm lg:max-w-md xl:max-w-lg rounded-3xl shadow-hover">
                     </div>
                 </div>
@@ -248,14 +267,13 @@
             <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                 <!-- About Image -->
                 <div class="relative order-2 lg:order-1">
-                    <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                        alt="Dra. Maria Silva em seu consultório"
+                    <img src="img/nicolly-foto2.jpg" alt="Psicóloga Nicolly Contro Ferreira em seu consultório"
                         class="w-full max-w-md mx-auto lg:max-w-lg rounded-2xl shadow-hover">
 
                     <!-- Floating Card -->
                     <div
                         class="absolute -bottom-6 -right-6 lg:-bottom-8 lg:-right-8 bg-white p-4 lg:p-6 rounded-xl shadow-hover max-w-48 lg:max-w-56">
-                        <h3 class="text-primary font-semibold mb-2 text-sm lg:text-base">CRP 06/123456</h3>
+                        <h3 class="text-primary font-semibold mb-2 text-sm lg:text-base">CRP 06/202060</h3>
                         <p class="text-xs lg:text-sm text-muted leading-relaxed">
                             Registro ativo no Conselho Regional de Psicologia
                         </p>
@@ -264,88 +282,95 @@
 
                 <!-- About Content -->
                 <div class="order-1 lg:order-2 space-y-6 lg:space-y-8">
-                    <h2 class="text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground">Dra. Maria Silva Santos</h2>
+                    <h2 class="text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground">Nicolly Contro
+                        Ferreira</h2>
                     <div class="w-16 h-1 bg-primary rounded-full"></div>
 
                     <div class="space-y-4 lg:space-y-6">
                         <p class="text-lg lg:text-xl text-muted leading-relaxed">
-                        Sou psicóloga clínica especializada em Terapia Cognitivo-Comportamental,
-                        com mais de 8 anos de experiência no atendimento de adultos e casais.
-                        Minha paixão é ajudar pessoas a descobrirem seu potencial e superarem
-                        os desafios emocionais que impedem uma vida plena e satisfatória.
-                    </p>
+                            Sou apaixonada pela psicologia clínica e escolhi atuar nessa área para acompanhar de perto a
+                            transformação de cada indivíduo. A psicoterapia individual proporciona um espaço seguro e
+                            acolhedor, onde cada pensamento, emoção e sentimento é escutado com empatia e sem
+                            julgamentos.
+                        </p>
                         <p class="text-lg lg:text-xl text-muted leading-relaxed">
-                        Acredito que cada pessoa possui recursos internos únicos para lidar com
-                        suas dificuldades. Meu papel é oferecer um espaço seguro e acolhedor
-                        onde você possa se conhecer melhor, desenvolver estratégias de enfrentamento
-                        e construir uma vida mais equilibrada e significativa.
-                    </p>
+                            Atuo com a Terapia Cognitivo-Comportamental para ajudar você a compreender suas qualidades,
+                            superar inseguranças, fortalecer sua autoestima e desenvolver relações mais saudáveis.
+                        </p>
                     </div>
 
                     <!-- Qualifications Grid -->
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
                         <div
-                            class="bg-white p-4 lg:p-6 rounded-xl shadow-card hover:shadow-hover transition-all duration-300 border border-border/50">
-                            <div class="flex items-start gap-3 lg:gap-4 mb-3">
+                            class="bg-white p-3 lg:p-4 rounded-xl shadow-card hover:shadow-hover transition-all duration-300 border border-border/50">
+                            <div class="flex items-start gap-3 lg:gap-4 mb-2">
                                 <div
-                                    class="flex-shrink-0 w-12 h-12 lg:w-14 lg:h-14 bg-primary/10 rounded-xl flex items-center justify-center">
-                                    <i data-feather="book" width="20" height="20" class="text-primary"></i>
-                                    </div>
+                                    class="flex-shrink-0 w-10 h-10 lg:w-12 lg:h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                                    <i data-feather="book" width="18" height="18" class="text-primary"></i>
+                                </div>
                                 <h3 class="font-semibold text-foreground text-sm lg:text-base">Formação Acadêmica</h3>
-                                </div>
-                            <p class="text-muted text-xs lg:text-sm leading-relaxed">
-                                    Graduação em Psicologia pela USP (2015)<br>
-                                    Mestrado em Psicologia Clínica (2018)
-                                </p>
+                            </div>
+                            <p class="text-muted text-xs lg:text-sm leading-tight">
+                                Bacharel em Psicologia pela Universidade Paulista<br>
+                                Pós-graduação em Psicologia Perinatal e TCC de Alta Performance (em andamento)
+                            </p>
                         </div>
 
                         <div
-                            class="bg-white p-4 lg:p-6 rounded-xl shadow-card hover:shadow-hover transition-all duration-300 border border-border/50">
-                            <div class="flex items-start gap-3 lg:gap-4 mb-3">
+                            class="bg-white p-3 lg:p-4 rounded-xl shadow-card hover:shadow-hover transition-all duration-300 border border-border/50">
+                            <div class="flex items-start gap-3 lg:gap-4 mb-2">
                                 <div
-                                    class="flex-shrink-0 w-12 h-12 lg:w-14 lg:h-14 bg-primary/10 rounded-xl flex items-center justify-center">
-                                    <i data-feather="award" width="20" height="20" class="text-primary"></i>
-                                    </div>
+                                    class="flex-shrink-0 w-10 h-10 lg:w-12 lg:h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                                    <i data-feather="award" width="18" height="18" class="text-primary"></i>
+                                </div>
                                 <h3 class="font-semibold text-foreground text-sm lg:text-base">Especializações</h3>
-                                </div>
-                            <p class="text-muted text-xs lg:text-sm leading-relaxed">
-                                    Terapia Cognitivo-Comportamental<br>
-                                    Terapia de Casal e Família<br>
-                                    Tratamento de Ansiedade e Depressão
-                                </p>
+                            </div>
+                            <p class="text-muted text-xs lg:text-sm leading-tight">
+                                Terapia Cognitivo-Comportamental<br>
+                                Psicologia Perinatal<br>
+                                Tratamento de Ansiedade, Depressão e Burnout
+                            </p>
                         </div>
 
                         <div
-                            class="bg-white p-4 lg:p-6 rounded-xl shadow-card hover:shadow-hover transition-all duration-300 border border-border/50">
-                            <div class="flex items-start gap-3 lg:gap-4 mb-3">
+                            class="bg-white p-3 lg:p-4 rounded-xl shadow-card hover:shadow-hover transition-all duration-300 border border-border/50">
+                            <div class="flex items-start gap-3 lg:gap-4 mb-2">
                                 <div
-                                    class="flex-shrink-0 w-12 h-12 lg:w-14 lg:h-14 bg-primary/10 rounded-xl flex items-center justify-center">
-                                    <i data-feather="clock" width="20" height="20" class="text-primary"></i>
-                                    </div>
+                                    class="flex-shrink-0 w-10 h-10 lg:w-12 lg:h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                                    <i data-feather="clock" width="18" height="18" class="text-primary"></i>
+                                </div>
                                 <h3 class="font-semibold text-foreground text-sm lg:text-base">Experiência</h3>
-                                </div>
-                            <p class="text-muted text-xs lg:text-sm leading-relaxed">
-                                    +8 anos de atuação clínica<br>
-                                    +500 pacientes atendidos<br>
-                                    Formação continuada constante
-                                </p>
+                            </div>
+                            <p class="text-muted text-xs lg:text-sm leading-tight">
+                                1 ano e 4 meses de atuação clínica<br>
+                                Atendimento personalizado e humanizado<br>
+                                Formação continuada constante
+                            </p>
                         </div>
 
                         <div
-                            class="bg-white p-4 lg:p-6 rounded-xl shadow-card hover:shadow-hover transition-all duration-300 border border-border/50">
-                            <div class="flex items-start gap-3 lg:gap-4 mb-3">
+                            class="bg-white p-3 lg:p-4 rounded-xl shadow-card hover:shadow-hover transition-all duration-300 border border-border/50">
+                            <div class="flex items-start gap-3 lg:gap-4 mb-2">
                                 <div
-                                    class="flex-shrink-0 w-12 h-12 lg:w-14 lg:h-14 bg-primary/10 rounded-xl flex items-center justify-center">
-                                    <i data-feather="heart" width="20" height="20" class="text-primary"></i>
-                                    </div>
-                                <h3 class="font-semibold text-foreground text-sm lg:text-base">Abordagem</h3>
+                                    class="flex-shrink-0 w-10 h-10 lg:w-12 lg:h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                                    <i data-feather="heart" width="18" height="18" class="text-primary"></i>
                                 </div>
-                            <p class="text-muted text-xs lg:text-sm leading-relaxed">
-                                    Acolhimento humanizado<br>
-                                    Escuta ativa e empática<br>
-                                    Tratamento personalizado
-                                </p>
+                                <h3 class="font-semibold text-foreground text-sm lg:text-base">Abordagem</h3>
+                            </div>
+                            <p class="text-muted text-xs lg:text-sm leading-tight">
+                                Acolhimento humanizado<br>
+                                Escuta ativa e empática<br>
+                                Terapia Cognitivo-Comportamental
+                            </p>
                         </div>
+                    </div>
+
+                    <!-- Quote Section -->
+                    <div class="mt-8 lg:mt-12 text-center">
+                        <blockquote class="italic text-lg lg:text-xl text-muted leading-relaxed">
+                            "O que perturba o ser humano não são os fatos, mas a interpretação que ele faz destes."
+                        </blockquote>
+                        <p class="text-sm lg:text-base text-primary font-medium mt-2">— Epicteto, séc. I d.C.</p>
                     </div>
                 </div>
             </div>
@@ -353,14 +378,14 @@
     </section>
 
     <!-- Services Section -->
-    <section id="servicos" class="py-16 lg:py-24 bg-gradient-to-b from-primary-lighter/10 to-white">
+    <section id="servicos" class="py-16 lg:py-24 bg-gradient-to-b from-soft-nude/20 to-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Section Header -->
             <div class="text-center mb-16 lg:mb-20">
                 <h2 class="text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground mb-4">Serviços Especializados</h2>
                 <div class="w-16 h-1 bg-primary rounded-full mx-auto mb-6"></div>
                 <p class="text-lg lg:text-xl text-muted max-w-3xl mx-auto leading-relaxed">
-                    Ofereco diferentes modalidades de atendimento psicológico, todas baseadas
+                    Ofereço diferentes modalidades de atendimento psicológico, todas baseadas
                     em evidências científicas e adaptadas às suas necessidades específicas.
                 </p>
             </div>
@@ -374,13 +399,13 @@
                         <div
                             class="flex-shrink-0 w-14 h-14 lg:w-16 lg:h-16 bg-primary/10 rounded-xl flex items-center justify-center">
                             <i data-feather="user" width="24" height="24" class="text-primary"></i>
-                            </div>
-                        <h3 class="font-semibold text-foreground text-lg lg:text-xl">Psicoterapia Individual</h3>
                         </div>
+                        <h3 class="font-semibold text-foreground text-lg lg:text-xl">Psicoterapia Individual</h3>
+                    </div>
                     <p class="text-muted mb-4 leading-relaxed">
-                            Atendimento personalizado para adultos que buscam autoconhecimento,
-                            superação de dificuldades emocionais e desenvolvimento pessoal.
-                        </p>
+                        Atendimento personalizado para adultos que buscam autoconhecimento,
+                        superação de dificuldades emocionais e desenvolvimento pessoal.
+                    </p>
                     <ul class="space-y-2">
                         <li class="flex items-center gap-2 text-sm text-muted">
                             <div class="w-2 h-2 bg-primary rounded-full"></div>
@@ -394,7 +419,7 @@
                             <div class="w-2 h-2 bg-primary rounded-full"></div>
                             Plano terapêutico personalizado
                         </li>
-                        </ul>
+                    </ul>
                 </div>
 
                 <!-- Atendimento Online -->
@@ -404,13 +429,13 @@
                         <div
                             class="flex-shrink-0 w-14 h-14 lg:w-16 lg:h-16 bg-primary/10 rounded-xl flex items-center justify-center">
                             <i data-feather="video" width="24" height="24" class="text-primary"></i>
-                            </div>
-                        <h3 class="font-semibold text-foreground text-lg lg:text-xl">Atendimento Online</h3>
                         </div>
+                        <h3 class="font-semibold text-foreground text-lg lg:text-xl">Atendimento Online</h3>
+                    </div>
                     <p class="text-muted mb-4 leading-relaxed">
-                            Terapia via videoconferência com a mesma qualidade do atendimento presencial,
-                            oferecendo flexibilidade e comodidade.
-                        </p>
+                        Terapia via videoconferência com a mesma qualidade do atendimento presencial,
+                        oferecendo flexibilidade e comodidade.
+                    </p>
                     <ul class="space-y-2">
                         <li class="flex items-center gap-2 text-sm text-muted">
                             <div class="w-2 h-2 bg-primary rounded-full"></div>
@@ -424,53 +449,54 @@
                             <div class="w-2 h-2 bg-primary rounded-full"></div>
                             Acesso de qualquer lugar
                         </li>
-                        </ul>
+                    </ul>
                 </div>
 
-                <!-- Terapia de Casal -->
+                <!-- Psicologia Perinatal -->
                 <div
                     class="bg-white p-6 lg:p-8 rounded-2xl shadow-card hover:shadow-hover hover:-translate-y-2 transition-all duration-300 border border-border/50">
                     <div class="flex items-start gap-4 mb-4">
                         <div
-                            class="flex-shrink-0 w-14 h-14 lg:w-16 lg:h-16 bg-primary/10 rounded-xl flex items-center justify-center">
-                            <i data-feather="users" width="24" height="24" class="text-primary"></i>
-                            </div>
-                        <h3 class="font-semibold text-foreground text-lg lg:text-xl">Terapia de Casal</h3>
+                            class="flex-shrink-0 w-12 h-12 lg:w-14 lg:h-14 bg-primary/10 rounded-xl flex items-center justify-center">
+                            <i data-feather="heart" width="24" height="24" class="text-primary"></i>
                         </div>
+                        <h3 class="font-semibold text-foreground text-lg lg:text-xl">Psicologia Perinatal</h3>
+                    </div>
                     <p class="text-muted mb-4 leading-relaxed">
-                            Apoio especializado para casais que desejam fortalecer seu relacionamento,
-                            melhorar a comunicação e resolver conflitos.
-                        </p>
+                        Apoio especializado para mulheres durante a gestação, parto e puerpério,
+                        incluindo o luto gestacional e os desafios da maternidade.
+                    </p>
                     <ul class="space-y-2">
                         <li class="flex items-center gap-2 text-sm text-muted">
                             <div class="w-2 h-2 bg-primary rounded-full"></div>
-                            Técnicas de comunicação
+                            Acompanhamento gestacional
                         </li>
                         <li class="flex items-center gap-2 text-sm text-muted">
                             <div class="w-2 h-2 bg-primary rounded-full"></div>
-                            Resolução de conflitos
+                            Suporte no puerpério
                         </li>
                         <li class="flex items-center gap-2 text-sm text-muted">
                             <div class="w-2 h-2 bg-primary rounded-full"></div>
-                            Fortalecimento do vínculo
+                            Luto gestacional
                         </li>
-                        </ul>
+                    </ul>
                 </div>
 
-                <!-- Tratamento de Ansiedade -->
+                <!-- Tratamento de Ansiedade e Burnout -->
                 <div
                     class="bg-white p-6 lg:p-8 rounded-2xl shadow-card hover:shadow-hover hover:-translate-y-2 transition-all duration-300 border border-border/50 service-card">
                     <div class="flex items-start gap-4 mb-4">
                         <div
                             class="flex-shrink-0 w-14 h-14 lg:w-16 lg:h-16 bg-primary/10 rounded-xl flex items-center justify-center">
                             <i data-feather="activity" width="24" height="24" class="text-primary"></i>
-                            </div>
-                        <h3 class="font-semibold text-foreground text-lg lg:text-xl">Tratamento de Ansiedade</h3>
                         </div>
+                        <h3 class="font-semibold text-foreground text-lg lg:text-xl">Tratamento de Ansiedade e Burnout
+                        </h3>
+                    </div>
                     <p class="text-muted mb-4 leading-relaxed">
-                            Abordagem especializada para transtornos de ansiedade, incluindo
-                            técnicas específicas para redução de sintomas.
-                        </p>
+                        Abordagem especializada para transtornos de ansiedade e síndrome de burnout,
+                        incluindo técnicas específicas para redução de sintomas e recuperação.
+                    </p>
                     <ul class="space-y-2">
                         <li class="flex items-center gap-2 text-sm text-muted">
                             <div class="w-2 h-2 bg-primary rounded-full"></div>
@@ -482,9 +508,9 @@
                         </li>
                         <li class="flex items-center gap-2 text-sm text-muted">
                             <div class="w-2 h-2 bg-primary rounded-full"></div>
-                            Exposição gradual
+                            Prevenção e tratamento de burnout
                         </li>
-                        </ul>
+                    </ul>
                 </div>
 
                 <!-- Apoio para Depressão -->
@@ -494,13 +520,13 @@
                         <div
                             class="flex-shrink-0 w-14 h-14 lg:w-16 lg:h-16 bg-primary/10 rounded-xl flex items-center justify-center">
                             <i data-feather="heart" width="24" height="24" class="text-primary"></i>
-                            </div>
-                        <h3 class="font-semibold text-foreground text-lg lg:text-xl">Apoio para Depressão</h3>
                         </div>
+                        <h3 class="font-semibold text-foreground text-lg lg:text-xl">Apoio para Depressão</h3>
+                    </div>
                     <p class="text-muted mb-4 leading-relaxed">
-                            Tratamento voltado para pessoas que enfrentam episódios depressivos,
-                            focando na recuperação do bem-estar emocional.
-                        </p>
+                        Tratamento voltado para pessoas que enfrentam episódios depressivos,
+                        focando na recuperação do bem-estar emocional.
+                    </p>
                     <ul class="space-y-2">
                         <li class="flex items-center gap-2 text-sm text-muted">
                             <div class="w-2 h-2 bg-primary rounded-full"></div>
@@ -514,23 +540,24 @@
                             <div class="w-2 h-2 bg-primary rounded-full"></div>
                             Prevenção de recaídas
                         </li>
-                        </ul>
+                    </ul>
                 </div>
 
-                <!-- Desenvolvimento da Autoestima -->
+                <!-- Desenvolvimento da Autoestima e Luto -->
                 <div
                     class="bg-white p-6 lg:p-8 rounded-2xl shadow-card hover:shadow-hover hover:-translate-y-2 transition-all duration-300 border border-border/50 service-card">
                     <div class="flex items-start gap-4 mb-4">
                         <div
                             class="flex-shrink-0 w-14 h-14 lg:w-16 lg:h-16 bg-primary/10 rounded-xl flex items-center justify-center">
-                            <i data-feather="user-check" width="24" height="24" class="text-primary"></i>
-                            </div>
-                        <h3 class="font-semibold text-foreground text-lg lg:text-xl">Desenvolvimento da Autoestima</h3>
+                            <i data-feather="heart" width="24" height="24" class="text-primary"></i>
                         </div>
+                        <h3 class="font-semibold text-foreground text-lg lg:text-xl">Autoestima e Processamento do Luto
+                        </h3>
+                    </div>
                     <p class="text-muted mb-4 leading-relaxed">
-                            Trabalho focado no fortalecimento da autoconfiança, autoaceitação
-                            e desenvolvimento de uma imagem mais positiva de si.
-                        </p>
+                        Trabalho focado no fortalecimento da autoconfiança, autoaceitação
+                        e processamento saudável do luto, incluindo luto gestacional.
+                    </p>
                     <ul class="space-y-2">
                         <li class="flex items-center gap-2 text-sm text-muted">
                             <div class="w-2 h-2 bg-primary rounded-full"></div>
@@ -538,13 +565,13 @@
                         </li>
                         <li class="flex items-center gap-2 text-sm text-muted">
                             <div class="w-2 h-2 bg-primary rounded-full"></div>
-                            Exercícios de autocompaixão
+                            Processamento do luto
                         </li>
                         <li class="flex items-center gap-2 text-sm text-muted">
                             <div class="w-2 h-2 bg-primary rounded-full"></div>
-                            Técnicas de empoderamento
+                            Luto gestacional
                         </li>
-                        </ul>
+                    </ul>
                 </div>
             </div>
 
@@ -665,7 +692,7 @@
             </div>
 
             <!-- CTA Card -->
-            <div class="bg-gradient-to-r from-primary-lighter/20 to-cream/30 rounded-3xl p-8 lg:p-12 text-center">
+            <div class="bg-gradient-to-r from-soft-nude/30 to-cream/40 rounded-3xl p-8 lg:p-12 text-center">
                 <h3 class="text-2xl lg:text-3xl font-bold text-foreground mb-4 lg:mb-6">
                     Pronto para iniciar sua jornada de autoconhecimento?
                 </h3>
@@ -683,7 +710,7 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section id="depoimentos" class="py-16 lg:py-24 bg-gradient-to-b from-primary-lighter/10 to-white">
+    <section id="depoimentos" class="py-16 lg:py-24 bg-gradient-to-b from-soft-nude/20 to-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Section Header -->
             <div class="text-center mb-16 lg:mb-20">
@@ -698,7 +725,7 @@
 
             <!-- Testimonials Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-16 lg:mb-20">
-                <!-- Ana Paula -->
+                <!-- Depoimento 1 -->
                 <div
                     class="bg-white p-6 lg:p-8 rounded-2xl shadow-card hover:shadow-hover hover:-translate-y-2 transition-all duration-300 border border-border/50">
                     <div class="flex justify-between items-start mb-4">
@@ -712,17 +739,15 @@
                         </div>
                     </div>
                     <p class="text-muted mb-6 leading-relaxed italic">
-                        "A Dra. Maria me ajudou a superar minha ansiedade de forma incrível.
-                        Hoje me sinto muito mais confiante e equilibrada. Seu acolhimento
-                        e profissionalismo fazem toda a diferença."
+                        "Maravilhoso! Tendo grande evolução durante o tratamento."
                     </p>
                     <div class="border-t border-border/50 pt-4">
-                        <div class="font-semibold text-foreground text-sm lg:text-base">Ana Paula</div>
-                        <div class="text-xs lg:text-sm text-muted">32 anos • Professora</div>
+                        <div class="font-semibold text-foreground text-sm lg:text-base">Paciente</div>
+                        <div class="text-xs lg:text-sm text-muted">Feedback real</div>
                     </div>
                 </div>
 
-                <!-- Carlos Eduardo -->
+                <!-- Depoimento 2 -->
                 <div
                     class="bg-white p-6 lg:p-8 rounded-2xl shadow-card hover:shadow-hover hover:-translate-y-2 transition-all duration-300 border border-border/50">
                     <div class="flex justify-between items-start mb-4">
@@ -736,17 +761,15 @@
                         </div>
                     </div>
                     <p class="text-muted mb-6 leading-relaxed italic">
-                        "Estava passando por um momento muito difícil e encontrei na terapia
-                        o suporte que precisava. A abordagem da Dra. Maria é muito eficaz
-                        e humana. Recomendo de coração."
+                        "Amei muito"
                     </p>
                     <div class="border-t border-border/50 pt-4">
-                        <div class="font-semibold text-foreground text-sm lg:text-base">Carlos Eduardo</div>
-                        <div class="text-xs lg:text-sm text-muted">28 anos • Engenheiro</div>
+                        <div class="font-semibold text-foreground text-sm lg:text-base">Paciente</div>
+                        <div class="text-xs lg:text-sm text-muted">Feedback real</div>
                     </div>
                 </div>
 
-                <!-- Mariana & João -->
+                <!-- Depoimento 3 -->
                 <div
                     class="bg-white p-6 lg:p-8 rounded-2xl shadow-card hover:shadow-hover hover:-translate-y-2 transition-all duration-300 border border-border/50">
                     <div class="flex justify-between items-start mb-4">
@@ -760,16 +783,15 @@
                         </div>
                     </div>
                     <p class="text-muted mb-6 leading-relaxed italic">
-                        "A terapia de casal nos ajudou a nos reconectar e melhorar nossa comunicação.
-                        Salvou nosso casamento! Somos gratos pela paciência e dedicação da Dra. Maria."
+                        "Atendimento muito bom, muito respeitosa, solícita e empática"
                     </p>
                     <div class="border-t border-border/50 pt-4">
-                        <div class="font-semibold text-foreground text-sm lg:text-base">Mariana & João</div>
-                        <div class="text-xs lg:text-sm text-muted">35 e 38 anos • Casal</div>
+                        <div class="font-semibold text-foreground text-sm lg:text-base">Paciente</div>
+                        <div class="text-xs lg:text-sm text-muted">Feedback real</div>
                     </div>
                 </div>
 
-                <!-- Roberto Silva -->
+                <!-- Depoimento 4 -->
                 <div
                     class="bg-white p-6 lg:p-8 rounded-2xl shadow-card hover:shadow-hover hover:-translate-y-2 transition-all duration-300 border border-border/50">
                     <div class="flex justify-between items-start mb-4">
@@ -783,17 +805,15 @@
                         </div>
                     </div>
                     <p class="text-muted mb-6 leading-relaxed italic">
-                        "Depois de anos evitando buscar ajuda, finalmente dei o primeiro passo.
-                        Foi a melhor decisão que tomei. Aprendi a lidar melhor com o estresse
-                        e a pressão do trabalho."
+                        "Muito bom"
                     </p>
                     <div class="border-t border-border/50 pt-4">
-                        <div class="font-semibold text-foreground text-sm lg:text-base">Roberto Silva</div>
-                        <div class="text-xs lg:text-sm text-muted">45 anos • Empresário</div>
+                        <div class="font-semibold text-foreground text-sm lg:text-base">Paciente</div>
+                        <div class="text-xs lg:text-sm text-muted">Feedback real</div>
                     </div>
                 </div>
 
-                <!-- Juliana Costa -->
+                <!-- Depoimento 5 -->
                 <div
                     class="bg-white p-6 lg:p-8 rounded-2xl shadow-card hover:shadow-hover hover:-translate-y-2 transition-all duration-300 border border-border/50">
                     <div class="flex justify-between items-start mb-4">
@@ -807,17 +827,15 @@
                         </div>
                     </div>
                     <p class="text-muted mb-6 leading-relaxed italic">
-                        "A modalidade online foi perfeita para minha rotina. Mesmo à distância,
-                        senti todo o acolhimento e profissionalismo. Minha autoestima melhorou
-                        muito com o acompanhamento."
+                        "Excelente"
                     </p>
                     <div class="border-t border-border/50 pt-4">
-                        <div class="font-semibold text-foreground text-sm lg:text-base">Juliana Costa</div>
-                        <div class="text-xs lg:text-sm text-muted">29 anos • Designer</div>
+                        <div class="font-semibold text-foreground text-sm lg:text-base">Paciente</div>
+                        <div class="text-xs lg:text-sm text-muted">Feedback real</div>
                     </div>
                 </div>
 
-                <!-- Lucas Pereira -->
+                <!-- Depoimento 6 -->
                 <div
                     class="bg-white p-6 lg:p-8 rounded-2xl shadow-card hover:shadow-hover hover:-translate-y-2 transition-all duration-300 border border-border/50">
                     <div class="flex justify-between items-start mb-4">
@@ -831,13 +849,11 @@
                         </div>
                     </div>
                     <p class="text-muted mb-6 leading-relaxed italic">
-                        "Estava com dificuldades para tomar decisões importantes na minha vida.
-                        A terapia me deu clareza e confiança. Hoje me sinto muito mais preparado
-                        para os desafios."
+                        "Ótimo"
                     </p>
                     <div class="border-t border-border/50 pt-4">
-                        <div class="font-semibold text-foreground text-sm lg:text-base">Lucas Pereira</div>
-                        <div class="text-xs lg:text-sm text-muted">24 anos • Estudante</div>
+                        <div class="font-semibold text-foreground text-sm lg:text-base">Paciente</div>
+                        <div class="text-xs lg:text-sm text-muted">Feedback real</div>
                     </div>
                 </div>
             </div>
@@ -846,19 +862,19 @@
             <div class="text-center">
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 lg:gap-12 max-w-2xl mx-auto mb-8">
                     <div class="text-center">
-                        <div class="text-3xl lg:text-4xl font-bold text-primary mb-2">500+</div>
-                        <div class="text-sm lg:text-base text-muted">Pacientes atendidos</div>
+                        <div class="text-3xl lg:text-4xl font-bold text-primary mb-2">100%</div>
+                        <div class="text-sm lg:text-base text-muted">Compromisso com o paciente</div>
                     </div>
                     <div class="text-center">
-                        <div class="text-3xl lg:text-4xl font-bold text-primary mb-2">98%</div>
-                        <div class="text-sm lg:text-base text-muted">Taxa de satisfação</div>
+                        <div class="text-3xl lg:text-4xl font-bold text-primary mb-2">5★</div>
+                        <div class="text-sm lg:text-base text-muted">Avaliação dos pacientes</div>
                     </div>
                     <div class="text-center">
-                        <div class="text-3xl lg:text-4xl font-bold text-primary mb-2">8+</div>
+                        <div class="text-3xl lg:text-4xl font-bold text-primary mb-2">1.4</div>
                         <div class="text-sm lg:text-base text-muted">Anos de experiência</div>
                     </div>
                 </div>
-                
+
                 <p class="text-sm text-muted italic">
                     *Depoimentos reais de pacientes (nomes alterados para preservar a privacidade)
                 </p>
@@ -867,7 +883,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contato" class="py-16 lg:py-24 bg-gradient-to-b from-white to-primary-lighter/10">
+    <section id="contato" class="py-16 lg:py-24 bg-gradient-to-b from-white to-soft-nude/20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Section Header -->
             <div class="text-center mb-16 lg:mb-20">
@@ -882,53 +898,53 @@
             <!-- Contact Grid -->
             <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 mb-16 lg:mb-20">
                 <!-- Contact Information -->
-                <div class="space-y-6 lg:space-y-8">
+                <div class="space-y-4 lg:space-y-6">
                     <h3 class="text-2xl lg:text-3xl font-bold text-foreground">Informações de Contato</h3>
 
                     <div class="space-y-4 lg:space-y-6">
                         <!-- Phone/WhatsApp -->
                         <div class="bg-white p-6 rounded-2xl shadow-card hover:shadow-hover transition-all duration-300 border border-border/50 cursor-pointer"
-                            onclick="window.open('tel:+5511999999999')">
+                            onclick="window.open('tel:+5512988978104')">
                             <div class="flex items-start gap-4">
                                 <div
                                     class="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
                                     <i data-feather="phone" width="20" height="20" class="text-primary"></i>
-                                    </div>
-                                    <div>
+                                </div>
+                                <div>
                                     <h4 class="font-semibold text-foreground text-base lg:text-lg mb-1">Telefone /
                                         WhatsApp</h4>
-                                    <p class="text-muted text-sm lg:text-base">(11) 99999-9999</p>
+                                    <p class="text-muted text-sm lg:text-base">(12) 98897-8104</p>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Email -->
                         <div class="bg-white p-6 rounded-2xl shadow-card hover:shadow-hover transition-all duration-300 border border-border/50 cursor-pointer"
-                            onclick="window.open('mailto:contato@dramariasilva.com.br')">
+                            onclick="window.open('mailto:psinicollyferreira@gmail.com')">
                             <div class="flex items-start gap-4">
                                 <div
                                     class="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
                                     <i data-feather="mail" width="20" height="20" class="text-primary"></i>
-                                    </div>
-                                    <div>
+                                </div>
+                                <div>
                                     <h4 class="font-semibold text-foreground text-base lg:text-lg mb-1">E-mail</h4>
-                                    <p class="text-muted text-sm lg:text-base">contato@dramariasilva.com.br</p>
+                                    <p class="text-muted text-sm lg:text-base">psinicollyferreira@gmail.com</p>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Address -->
                         <div class="bg-white p-6 rounded-2xl shadow-card hover:shadow-hover transition-all duration-300 border border-border/50 cursor-pointer"
-                            onclick="window.open('https://maps.google.com/?q=Vila+Madalena+São+Paulo')">
+                            onclick="window.open('https://maps.google.com/?q=Ark%27tetura+Humana+São+José+dos+Campos')">
                             <div class="flex items-start gap-4">
                                 <div
                                     class="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
                                     <i data-feather="map-pin" width="20" height="20" class="text-primary"></i>
-                                    </div>
-                                    <div>
+                                </div>
+                                <div>
                                     <h4 class="font-semibold text-foreground text-base lg:text-lg mb-1">Endereço</h4>
-                                    <p class="text-muted text-sm lg:text-base">Rua das Flores, 123<br>Vila Madalena -
-                                        São Paulo/SP</p>
+                                    <p class="text-muted text-sm lg:text-base">Ark'tetura Humana<br>Rua Antônio Major
+                                        Domingues, 357 - Centro - São José dos Campos/SP</p>
                                 </div>
                             </div>
                         </div>
@@ -940,38 +956,26 @@
                                 <div
                                     class="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
                                     <i data-feather="clock" width="20" height="20" class="text-primary"></i>
-                                    </div>
-                                    <div>
+                                </div>
+                                <div>
                                     <h4 class="font-semibold text-foreground text-base lg:text-lg mb-1">Horários de
                                         Atendimento</h4>
-                                    <p class="text-muted text-sm lg:text-base">Segunda a Sexta: 8h às 18h<br>Sábados: 8h
+                                    <p class="text-muted text-sm lg:text-base">Segunda a Sexta: 20h às 20h<br>Sábados:
+                                        9h
                                         às 12h</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- WhatsApp Card -->
-                    <div class="bg-green-50 border-2 border-green-200 rounded-2xl p-6 lg:p-8 text-center">
-                        <i data-feather="message-square" width="48" height="48" class="text-green-600 mx-auto mb-4"></i>
-                        <h3 class="text-green-800 font-semibold text-lg lg:text-xl mb-3">Atendimento via WhatsApp</h3>
-                        <p class="text-green-700 text-sm lg:text-base mb-6 leading-relaxed">
-                                Para maior praticidade, você pode entrar em contato diretamente
-                                pelo WhatsApp e agendar sua consulta de forma rápida.
-                            </p>
-                        <a href="#" onclick="openWhatsApp()"
-                            class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-green-600 text-white font-medium rounded-xl hover:bg-green-700 transition-colors duration-300 text-sm lg:text-base">
-                                <i data-feather="message-square" width="16" height="16"></i>
-                                Conversar no WhatsApp
-                            </a>
-                    </div>
+
                 </div>
 
                 <!-- Contact Form -->
-                <div class="bg-white p-6 lg:p-8 rounded-2xl shadow-hover border border-border/50">
+                <div class="bg-white p-6 lg:p-8 rounded-2xl shadow-hover border border-border/50 h-fit">
                     <h3 class="text-2xl lg:text-3xl font-bold text-foreground mb-6 lg:mb-8">Envie uma Mensagem</h3>
 
-                    <form onsubmit="handleSubmit(event)" class="space-y-4 lg:space-y-6">
+                    <form onsubmit="handleWhatsAppSubmit(event)" class="space-y-4 lg:space-y-6">
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div>
                                 <label class="block text-sm font-medium text-foreground mb-2" for="name">Nome completo
@@ -985,10 +989,10 @@
                                     *</label>
                                 <input
                                     class="w-full px-4 py-3 border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all duration-200"
-                                    id="phone" name="phone" type="tel" required placeholder="(11) 99999-9999">
+                                    id="phone" name="phone" type="tel" required placeholder="(12) 98897-8104">
                             </div>
                         </div>
-                        
+
                         <div>
                             <label class="block text-sm font-medium text-foreground mb-2" for="email">E-mail *</label>
                             <input
@@ -1008,51 +1012,61 @@
 
                         <button type="submit"
                             class="w-full inline-flex items-center justify-center gap-2 px-6 py-4 bg-gradient-to-r from-primary to-primary-light text-white font-semibold rounded-xl shadow-card hover:shadow-hover hover:-translate-y-1 transition-all duration-300 text-base">
-                            <i data-feather="send" width="16" height="16"></i>
-                            Enviar Mensagem
+                            <i data-feather="message-circle" width="16" height="16"></i>
+                            Enviar via WhatsApp
                         </button>
 
                         <p class="text-xs text-muted text-center">
-                            * Todas as informações são tratadas com total sigilo profissional
+                            * Sua mensagem será enviada diretamente para o WhatsApp da Nicolly
                         </p>
                     </form>
                 </div>
             </div>
 
-                        <!-- Map Section -->
+            <!-- Map Section -->
             <div class="bg-white rounded-2xl shadow-card overflow-hidden">
-                <!-- Header da seção -->
-                <div class="bg-primary-lighter/20 p-6 lg:p-8 text-center">
-                    <h3 class="text-2xl lg:text-3xl font-semibold text-foreground mb-2">Localização do Consultório</h3>
-                    <p class="text-muted text-base lg:text-lg">Rua Doutor Adelio da Silva, 150 - Taubaté/SP</p>
+                <div class="bg-soft-nude/30 p-6 lg:p-8 text-center">
+                    <h3 class="text-2xl lg:text-3xl font-semibold text-foreground mb-2">
+                        Localização do Consultório
+                    </h3>
+                    <p class="text-muted text-base lg:text-lg">
+                        Ark'tetura Humana - Rua Antônio Major Domingues, 357 - Centro - São José dos Campos/SP
+                    </p>
                 </div>
-                
-                <!-- Mapa como fundo -->
+
                 <div class="h-80 lg:h-96 relative">
-                    <!-- Iframe do Google Maps -->
+                    <!-- Mapa com pin fixo -->
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.489548654896!2d-45.5577!3d-23.0265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5774c043479d%3A0x6c6ca08a478bb41!2sR.+Dr.+Adelio+da+Silva%2C+150%2C+Taubat%C3%A9+-+SP!5e0!3m2!1spt-BR!2sbr!4v1708193801323!5m2!1spt-BR!2sbr"
-                        width="100%"
-                        height="100%"
-                        style="border:0;"
-                        allowfullscreen=""
-                        loading="lazy"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2905.2986161125556!2d-45.8894888!3d-23.1908473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc4b7e75e2d7a7%3A0x737e6c45a443289a!2sArk'tetura%20Humana!5e0!3m2!1spt-BR!2sbr!4v1708280000000!5m2!1spt-BR!2sbr"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"
-                        title="Mapa de Localização do Consultório em Taubaté">
+                        title="Localização do Consultório em São José dos Campos">
                     </iframe>
-                    
-                                    <!-- Overlay minimalista com botão elegante -->
-                <div class="absolute bottom-6 right-6">
-                    <button class="group bg-white/90 backdrop-blur-md border border-white/20 text-foreground font-medium rounded-2xl px-6 py-4 shadow-xl hover:shadow-2xl hover:bg-white transition-all duration-300 text-sm flex items-center gap-3 hover:scale-105" 
-                            onclick="window.open('https://www.google.com/maps/search/?api=1&query=Rua+Doutor+Adelio+da+Silva+150+Taubat%C3%A9+SP')">
-                        <div class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">
-                            <i data-feather="external-link" class="w-4 h-4 text-primary group-hover:text-primary-light"></i>
-                        </div>
-                        <span class="font-medium">Abrir no Maps</span>
-                    </button>
-                </div>
+
+                    <!-- Botão para abrir no Maps -->
+                    <div class="absolute bottom-6 right-6">
+                        <button
+                            class="group bg-white/90 backdrop-blur-md border border-white/20 text-foreground font-medium rounded-2xl px-6 py-4 shadow-xl hover:shadow-2xl hover:bg-white transition-all duration-300 text-sm flex items-center gap-3 hover:scale-105"
+                            onclick="window.open('https://www.google.com/maps/search/?api=1&query=-23.1908473,-45.8894888')">
+                            <div
+                                class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">
+                                <i data-feather="external-link"
+                                    class="w-4 h-4 text-primary group-hover:text-primary-light"></i>
+                            </div>
+                            <span class="font-medium">Abrir no Maps</span>
+                        </button>
+                    </div>
                 </div>
             </div>
+
+
+
+            <script>
+                function openGoogleMaps() {
+                    window.open("https://www.google.com/maps?q=Ark'tetura+Humana+-+Rua+Ant%C3%B4nio+Major+Domingues,+357+-+Centro,+S%C3%A3o+Jos%C3%A9+dos+Campos+-+SP", "_blank");
+                }
+            </script>
+
         </div>
     </section>
 
@@ -1063,25 +1077,17 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 mb-12 lg:mb-16">
                 <!-- Brand Section -->
                 <div class="space-y-4">
-                    <h3 class="text-xl lg:text-2xl font-semibold">Dra. Maria Silva Santos</h3>
-                    <p class="text-white/80 text-sm lg:text-base">CRP 06/123456</p>
+                    <h3 class="text-xl lg:text-2xl font-semibold">Psicóloga Nicolly Contro Ferreira</h3>
+                    <p class="text-white/80 text-sm lg:text-base">CRP 06/202060</p>
                     <p class="text-white/80 text-sm lg:text-base leading-relaxed">
                         Psicóloga clínica especializada em Terapia Cognitivo-Comportamental,
                         oferecendo acompanhamento psicológico humanizado e acolhedor para
-                        adultos e casais.
+                        adultos, com foco em ansiedade, depressão, burnout e psicologia perinatal.
                     </p>
                     <div class="flex gap-3">
-                        <a href="https://instagram.com/dramariasilva.psi" target="_blank"
+                        <a href="https://instagram.com/psinicollyferreira" target="_blank"
                             class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition-colors duration-200">
                             <i data-feather="instagram" width="18" height="18"></i>
-                        </a>
-                        <a href="https://facebook.com/dramariasilva.psi" target="_blank"
-                            class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition-colors duration-200">
-                            <i data-feather="facebook" width="18" height="18"></i>
-                        </a>
-                        <a href="https://linkedin.com/in/dramariasilva" target="_blank"
-                            class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition-colors duration-200">
-                            <i data-feather="linkedin" width="18" height="18"></i>
                         </a>
                     </div>
                 </div>
@@ -1114,21 +1120,22 @@
                     <div class="space-y-3 text-sm lg:text-base text-white/80">
                         <div>
                             <strong>Telefone / WhatsApp:</strong><br>
-                            (11) 99999-9999
+                            (12) 98897-8104
                         </div>
                         <div>
                             <strong>E-mail:</strong><br>
-                            contato@dramariasilva.com.br
+                            psinicollyferreira@gmail.com
                         </div>
                         <div>
                             <strong>Endereço:</strong><br>
-                            Rua Doutor Adelio da Silva, 150<br>
-                            Taubaté - SP
+                            Ark'tetura Humana<br>
+                            Rua Antônio Major Domingues, 357 - Centro<br>
+                            São José dos Campos - SP
                         </div>
                         <div>
                             <strong>Horários:</strong><br>
-                            Segunda a Sexta: 8h às 18h<br>
-                            Sábados: 8h às 12h
+                            Segunda a Sexta: 20h às 20h<br>
+                            Sábados: 9h às 12h
                         </div>
                     </div>
                 </div>
@@ -1152,7 +1159,7 @@
                                 de Ética dos Psicólogos.
                             </p>
                             <p>
-                                <strong>Registro Profissional:</strong> CRP 06/123456 - Registro ativo
+                                <strong>Registro Profissional:</strong> CRP 06/202060 - Registro ativo
                                 no Conselho Regional de Psicologia de São Paulo.
                             </p>
                             <p>
@@ -1166,7 +1173,8 @@
 
             <!-- Footer Bottom -->
             <div class="border-t border-white/20 pt-8 text-center">
-                <p class="text-white/80 text-sm lg:text-base">© 2024 Dra. Maria Silva Santos - CRP 06/123456. Todos os
+                <p class="text-white/80 text-sm lg:text-base">© 2024 Psicóloga Nicolly Contro Ferreira - CRP 06/202060.
+                    Todos os
                     direitos reservados.</p>
                 <p class="text-white/60 text-xs lg:text-sm mt-2">
                     Desenvolvido com carinho para oferecer o melhor atendimento psicológico.
@@ -1182,6 +1190,34 @@
         <i data-feather="message-circle" width="20" height="20" class="lg:w-6 lg:h-6"></i>
     </a>
     <script src="script.js"></script>
+
+    <!-- Inicialização robusta dos Feather Icons -->
+    <script>
+        // Garantir que os ícones sejam renderizados corretamente
+        document.addEventListener('DOMContentLoaded', function () {
+            if (typeof feather !== 'undefined') {
+                // Primeira tentativa
+                feather.replace();
+
+                // Segunda tentativa após um pequeno delay
+                setTimeout(() => {
+                    feather.replace();
+                }, 100);
+
+                // Terceira tentativa após o carregamento completo
+                window.addEventListener('load', () => {
+                    feather.replace();
+                });
+            }
+        });
+
+        // Fallback: se feather não estiver disponível, tentar novamente
+        window.addEventListener('load', function () {
+            if (typeof feather !== 'undefined') {
+                feather.replace();
+            }
+        });
+    </script>
 </body>
 
 </html>

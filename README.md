@@ -1,4 +1,4 @@
-# Landing Page Dra. Maria Silva - Psicóloga
+# Landing Page Psicóloga Nicolly Contro Ferreira
 
 ## 📱 Responsividade Mobile-First Implementada
 

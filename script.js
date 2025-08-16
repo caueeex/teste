@@ -40,7 +40,15 @@ function scrollToSection(sectionId) {
 
 // Open WhatsApp
 function openWhatsApp() {
-    window.open('https://wa.me/5511999999999?text=Olá! Gostaria de agendar uma consulta.', '_blank');
+    window.open('https://wa.me/5512988978104?text=Olá! Gostaria de agendar uma consulta.', '_blank');
+}
+
+// Open Google Maps
+function openGoogleMaps() {
+    const address = "Ark'tetura Humana, Rua Antônio Major Domingues, 357, Centro, São José dos Campos, SP";
+    const encodedAddress = encodeURIComponent(address);
+    const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodedAddress}`;
+    window.open(mapsUrl, '_blank');
 }
 
 // Force re-render all Feather Icons (useful for debugging)
@@ -285,6 +293,7 @@ function handleSubmit(event) {
 function initMap() {
     const mapIframe = document.querySelector('iframe[src*="google.com/maps"]');
     const mapButton = document.querySelector('.absolute.bottom-6.right-6 button');
+    const mapFallback = document.getElementById('mapFallback');
     
     if (mapIframe && mapButton) {
         console.log('Map iframe and button found');
@@ -292,6 +301,10 @@ function initMap() {
         // Add loading state to iframe
         mapIframe.addEventListener('load', () => {
             console.log('Google Maps loaded successfully');
+            // Hide fallback if it was showing
+            if (mapFallback) {
+                mapFallback.style.display = 'none';
+            }
             // Add a subtle animation to the button when map loads
             mapButton.style.opacity = '0';
             mapButton.style.transform = 'translateY(20px) scale(0.9)';
@@ -305,8 +318,18 @@ function initMap() {
         // Handle iframe errors gracefully
         mapIframe.addEventListener('error', () => {
             console.log('Google Maps failed to load');
-            // Could show a fallback message here if needed
+            showMapFallback();
         });
+        
+        // Add timeout to check if iframe loads within 10 seconds
+        setTimeout(() => {
+            if (mapIframe.contentDocument && mapIframe.contentDocument.readyState === 'complete') {
+                console.log('Map loaded successfully');
+            } else {
+                console.log('Map loading timeout, showing fallback');
+                showMapFallback();
+            }
+        }, 10000);
         
         // Add hover effects to button
         mapButton.addEventListener('mouseenter', () => {
@@ -316,6 +339,18 @@ function initMap() {
         mapButton.addEventListener('mouseleave', () => {
             mapButton.style.transform = 'translateY(0) scale(1)';
         });
+    }
+}
+
+// Show map fallback when iframe fails
+function showMapFallback() {
+    const mapIframe = document.querySelector('iframe[src*="google.com/maps"]');
+    const mapFallback = document.getElementById('mapFallback');
+    
+    if (mapIframe && mapFallback) {
+        mapIframe.style.display = 'none';
+        mapFallback.style.display = 'flex';
+        console.log('Showing map fallback');
     }
 }
 
