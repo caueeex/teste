@@ -94,6 +94,36 @@ function handleSubmit(event) {
     event.target.reset();
 }
 
+// Handle WhatsApp form submission
+function handleWhatsAppSubmit(event) {
+    event.preventDefault();
+    
+    // Get form data
+    const formData = new FormData(event.target);
+    const name = formData.get('name');
+    const phone = formData.get('phone');
+    const email = formData.get('email');
+    const message = formData.get('message');
+    
+    // Create WhatsApp message
+    const whatsappMessage = `*Nova mensagem do site:*%0A%0A*Nome:* ${name}%0A*Telefone:* ${phone}%0A*E-mail:* ${email}%0A%0A*Mensagem:*%0A${message}%0A%0A_Enviado através do site oficial_`;
+    
+    // WhatsApp number (Nicolly's number)
+    const whatsappNumber = '5512988978104';
+    
+    // Create WhatsApp URL
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+    
+    // Open WhatsApp
+    window.open(whatsappUrl, '_blank');
+    
+    // Show success message
+    alert('Formulário preenchido com sucesso!\n\nAbrindo o WhatsApp para enviar sua mensagem diretamente para a Nicolly.');
+    
+    // Reset form
+    event.target.reset();
+}
+
 // Scroll animations with improved performance
 const observerOptions = {
     threshold: 0.1,

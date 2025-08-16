@@ -1020,6 +1020,42 @@
                             * Sua mensagem será enviada diretamente para o WhatsApp da Nicolly
                         </p>
                     </form>
+                    
+                    <script>
+                        function handleWhatsAppSubmit(event) {
+                            event.preventDefault();
+                            console.log('Função handleWhatsAppSubmit chamada');
+                            
+                            // Get form data
+                            const formData = new FormData(event.target);
+                            const name = formData.get('name');
+                            const phone = formData.get('phone');
+                            const email = formData.get('email');
+                            const message = formData.get('message');
+                            
+                            console.log('Dados coletados:', { name, phone, email, message });
+                            
+                            // Create WhatsApp message
+                            const whatsappMessage = `*Nova mensagem do site:*%0A%0A*Nome:* ${name}%0A*Telefone:* ${phone}%0A*E-mail:* ${email}%0A%0A*Mensagem:*%0A${message}%0A%0A_Enviado através do site oficial_`;
+                            
+                            // WhatsApp number (Nicolly's number)
+                            const whatsappNumber = '5512988978104';
+                            
+                            // Create WhatsApp URL using the correct API format
+                            const whatsappUrl = `https://api.whatsapp.com/send/?phone=${whatsappNumber}&text=${whatsappMessage}&type=phone_number&app_absent=0`;
+                            
+                            console.log('URL WhatsApp:', whatsappUrl);
+                            
+                            // Open WhatsApp
+                            window.open(whatsappUrl, '_blank');
+                            
+                            // Show success message
+                            alert('Formulário preenchido com sucesso!\n\nAbrindo o WhatsApp para enviar sua mensagem diretamente para a Nicolly.');
+                            
+                            // Reset form
+                            event.target.reset();
+                        }
+                    </script>
                 </div>
             </div>
 
