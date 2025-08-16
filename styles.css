@@ -1283,3 +1283,247 @@ footer {
 .gradient-soft {
     background: linear-gradient(180deg, hsl(40, 30%, 98%) 0%, hsl(35, 15%, 85%) 100%);
 }
+
+/* Testimonials Carousel CSS */
+#testimonials-carousel {
+    will-change: transform;
+    transform-style: preserve-3d;
+}
+
+#testimonials-carousel .w-full {
+    transition: all 0.3s ease-in-out;
+    backface-visibility: hidden;
+}
+
+/* Enhanced slide transitions */
+#testimonials-carousel .w-full {
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#testimonials-carousel .w-full:hover {
+    transform: scale(1.02);
+}
+
+/* Active dot styling - DESKTOP DEFAULT */
+.active-dot {
+    background-color: #8b5a3c !important;
+    transform: scale(1.25);
+    transition: all 0.3s ease-in-out;
+    z-index: 10;
+    border: 1px solid #8b5a3c !important;
+}
+
+/* Ensure dots are visible */
+.dot-indicator {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    width: 6px !important;
+    height: 6px !important;
+    background-color: #e5e5e5 !important;
+    border: 1px solid #d1d5db !important;
+}
+
+/* Inactive dot styling */
+[data-slide]:not(.active-dot) {
+    background-color: var(--soft-nude) !important;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Responsive dot sizing - MOBILE FIRST */
+@media (max-width: 480px) {
+    .dot-indicator {
+        width: 6px !important;
+        height: 6px !important;
+        min-width: 6px !important;
+        min-height: 6px !important;
+        max-width: 6px !important;
+        max-height: 6px !important;
+        background-color: #e5e5e5 !important;
+        border: 1px solid #d1d5db !important;
+    }
+    
+    .active-dot {
+        transform: scale(1.1) !important;
+        background-color: #8b5a3c !important;
+        border: 1px solid #8b5a3c !important;
+    }
+}
+
+@media (max-width: 640px) {
+    .dot-indicator {
+        width: 8px !important;
+        height: 8px !important;
+        min-width: 8px !important;
+        min-height: 8px !important;
+        max-width: 8px !important;
+        max-height: 8px !important;
+        background-color: #e5e5e5 !important;
+        border: 1px solid #d1d5db !important;
+    }
+    
+    .active-dot {
+        transform: scale(1.15) !important;
+        background-color: #8b5a3c !important;
+        border: 1px solid #8b5a3c !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .dot-indicator {
+        width: 10px !important;
+        height: 10px !important;
+        min-width: 10px !important;
+        min-height: 10px !important;
+        max-width: 10px !important;
+        max-height: 10px !important;
+        background-color: #e5e5e5 !important;
+        border: 1px solid #d1d5db !important;
+    }
+    
+    .active-dot {
+        transform: scale(1.2) !important;
+        background-color: #8b5a3c !important;
+        border: 1px solid #8b5a3c !important;
+    }
+}
+
+/* Carousel navigation buttons */
+#prev-btn, #next-btn {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+#prev-btn:hover, #next-btn:hover {
+    transform: scale(1.1) translateY(-50%);
+}
+
+/* Specific positioning for navigation arrows */
+#prev-btn {
+    left: 0;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#next-btn {
+    right: 0;
+    top: 50%;
+    transform: translateX(50%) translateY(-50%);
+}
+
+#prev-btn:hover {
+    transform: translateX(-50%) translateY(-50%) scale(1.1);
+}
+
+#next-btn:hover {
+    transform: translateX(50%) translateY(-50%) scale(1.1);
+}
+
+/* Responsive arrow positioning */
+@media (max-width: 640px) {
+    #prev-btn, #next-btn {
+        top: calc(50% - 16px); /* Adjust for 32px button height */
+    }
+    
+    #prev-btn:hover {
+        transform: translateX(-50%) translateY(-50%) scale(1.05);
+    }
+    
+    #next-btn:hover {
+        transform: translateX(50%) translateY(-50%) scale(1.05);
+    }
+}
+
+@media (max-width: 480px) {
+    #prev-btn, #next-btn {
+        top: calc(50% - 12px); /* Adjust for 24px button height */
+    }
+}
+
+/* Smooth transitions for all carousel elements */
+.carousel-slide {
+    transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Enhanced hover effects for testimonial cards */
+.testimonial-card {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.testimonial-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive adjustments for carousel */
+@media (max-width: 768px) {
+    #prev-btn, #next-btn {
+        width: 40px;
+        height: 40px;
+    }
+    
+    #prev-btn i, #next-btn i {
+        width: 20px;
+        height: 20px;
+    }
+    
+    /* Mobile-specific arrow positioning */
+    #prev-btn, #next-btn {
+        top: calc(50% - 20px); /* Adjust for smaller button height on mobile */
+    }
+}
+
+@media (max-width: 640px) {
+    /* Small mobile adjustments */
+    #prev-btn, #next-btn {
+        width: 32px;
+        height: 32px;
+        top: calc(50% - 16px);
+    }
+    
+    #prev-btn i, #next-btn i {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Extra small mobile adjustments */
+    #prev-btn, #next-btn {
+        width: 28px;
+        height: 28px;
+        top: calc(50% - 14px);
+    }
+    
+    #prev-btn i, #next-btn i {
+        width: 14px;
+        height: 14px;
+    }
+}
+
+/* Fine-tune arrow positioning for perfect centering */
+#prev-btn, #next-btn {
+    top: calc(50% - 24px); /* Adjust for button height */
+}
+
+/* DESKTOP STYLES - Telas maiores que 768px */
+@media (min-width: 769px) {
+    .dot-indicator {
+        width: 12px !important;
+        height: 12px !important;
+        min-width: 12px !important;
+        min-height: 12px !important;
+        max-width: 12px !important;
+        max-height: 12px !important;
+        background-color: #e5e5e5 !important;
+        border: 1px solid #d1d5db !important;
+    }
+    
+    .active-dot {
+        background-color: #8b5a3c !important;
+        border: 1px solid #8b5a3c !important;
+        transform: scale(1.25) !important;
+    }
+}

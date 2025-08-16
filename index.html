@@ -723,138 +723,302 @@
                 </p>
             </div>
 
-            <!-- Testimonials Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-16 lg:mb-20">
-                <!-- Depoimento 1 -->
-                <div
-                    class="bg-white p-6 lg:p-8 rounded-2xl shadow-card hover:shadow-hover hover:-translate-y-2 transition-all duration-300 border border-border/50">
-                    <div class="flex justify-between items-start mb-4">
-                        <i data-feather="message-circle" class="text-primary/20 w-8 h-8"></i>
-                        <div class="flex gap-1">
-                            <span class="text-yellow-400 text-lg">★</span>
-                            <span class="text-yellow-400 text-lg">★</span>
-                            <span class="text-yellow-400 text-lg">★</span>
-                            <span class="text-yellow-400 text-lg">★</span>
-                            <span class="text-yellow-400 text-lg">★</span>
+            <!-- Testimonials Carousel -->
+            <div class="relative max-w-6xl mx-auto mb-16 lg:mb-20">
+                <!-- Carousel Container -->
+                <div class="overflow-hidden">
+                    <div id="testimonials-carousel" class="flex transition-transform duration-700 ease-in-out">
+                        <!-- Desktop: 3 por vez, Mobile: 2 por vez -->
+                        
+                        <!-- Slide 1 - Desktop: 3 depoimentos, Mobile: 2 depoimentos -->
+                        <div class="w-full flex-shrink-0 px-2 sm:px-4">
+                            <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-8">
+                                <!-- Depoimento 1 -->
+                                <div class="bg-white p-4 sm:p-6 lg:p-8 rounded-2xl shadow-card hover:shadow-hover hover:-translate-y-2 transition-all duration-300 border border-border/50">
+                                    <div class="flex justify-between items-start mb-4">
+                                        <i data-feather="message-circle" class="text-primary/20 w-8 h-8"></i>
+                                        <div class="flex gap-1">
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                        </div>
+                                    </div>
+                                    <p class="text-muted mb-6 leading-relaxed italic">
+                                        "Gostei bastante, apesar de nova, muito boa e precisa."
+                                    </p>
+                                    <div class="border-t border-border/50 pt-4">
+                                        <div class="font-semibold text-foreground text-sm lg:text-base">Paciente</div>
+                                        <div class="text-xs lg:text-sm text-muted">Feedback real</div>
+                                    </div>
+                                </div>
+
+                                <!-- Depoimento 2 (visível em todas as telas) -->
+                                <div class="bg-white p-4 sm:p-6 lg:p-8 rounded-2xl shadow-card hover:shadow-hover hover:-translate-y-2 transition-all duration-300 border border-border/50">
+                                    <div class="flex justify-between items-start mb-4">
+                                        <i data-feather="message-circle" class="text-primary/20 w-8 h-8"></i>
+                                        <div class="flex gap-1">
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                        </div>
+                                    </div>
+                                    <p class="text-muted mb-6 leading-relaxed italic">
+                                        "Muito atenciosa com o paciente, passa carinho e confiança meu filho adora."
+                                    </p>
+                                    <div class="border-t border-border/50 pt-4">
+                                        <div class="font-semibold text-foreground text-sm lg:text-base">Paciente</div>
+                                        <div class="text-xs lg:text-sm text-muted">Feedback real</div>
+                                    </div>
+                                </div>
+
+                                <!-- Depoimento 3 (visível em todas as telas) -->
+                                <div class="bg-white p-4 sm:p-6 lg:p-8 rounded-2xl shadow-card hover:shadow-hover hover:-translate-y-2 transition-all duration-300 border border-border/50">
+                                    <div class="flex justify-between items-start mb-4">
+                                        <i data-feather="message-circle" class="text-primary/20 w-8 h-8"></i>
+                                        <div class="flex gap-1">
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                        </div>
+                                    </div>
+                                    <p class="text-muted mb-6 leading-relaxed italic">
+                                        "Espetacular, a profissional atendeu todas as minhas expectativas e tem me ajudado muito no meu processo!"
+                                    </p>
+                                    <div class="border-t border-border/50 pt-4">
+                                        <div class="font-semibold text-foreground text-sm lg:text-base">Paciente</div>
+                                        <div class="text-xs lg:text-sm text-muted">Feedback real</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <p class="text-muted mb-6 leading-relaxed italic">
-                        "Maravilhoso! Tendo grande evolução durante o tratamento."
-                    </p>
-                    <div class="border-t border-border/50 pt-4">
-                        <div class="font-semibold text-foreground text-sm lg:text-base">Paciente</div>
-                        <div class="text-xs lg:text-sm text-muted">Feedback real</div>
+
+                        <!-- Slide 2 - Desktop: 3 depoimentos, Mobile: 2 depoimentos -->
+                        <div class="w-full flex-shrink-0 px-2 sm:px-4">
+                            <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-8">
+                                <!-- Depoimento 4 -->
+                                <div class="bg-white p-4 sm:p-6 lg:p-8 rounded-2xl shadow-card hover:shadow-hover hover:-translate-y-2 transition-all duration-300 border border-border/50">
+                                    <div class="flex justify-between items-start mb-4">
+                                        <i data-feather="message-circle" class="text-primary/20 w-8 h-8"></i>
+                                        <div class="flex gap-1">
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                        </div>
+                                    </div>
+                                    <p class="text-muted mb-6 leading-relaxed italic">
+                                        "Muito preparada para atendimento pediátrico."
+                                    </p>
+                                    <div class="border-t border-border/50 pt-4">
+                                        <div class="font-semibold text-foreground text-sm lg:text-base">Paciente</div>
+                                        <div class="text-xs lg:text-sm text-muted">Feedback real</div>
+                                    </div>
+                                </div>
+
+                                <!-- Depoimento 5 (visível em todas as telas) -->
+                                <div class="bg-white p-4 sm:p-6 lg:p-8 rounded-2xl shadow-card hover:shadow-hover hover:-translate-y-2 transition-all duration-300 border border-border/50">
+                                    <div class="flex justify-between items-start mb-4">
+                                        <i data-feather="message-circle" class="text-primary/20 w-8 h-8"></i>
+                                        <div class="flex gap-1">
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                        </div>
+                                    </div>
+                                    <p class="text-muted mb-6 leading-relaxed italic">
+                                        "Gosto muito dela, e me ajudou muito."
+                                    </p>
+                                    <div class="border-t border-border/50 pt-4">
+                                        <div class="font-semibold text-foreground text-sm lg:text-base">Paciente</div>
+                                        <div class="text-xs lg:text-sm text-muted">Feedback real</div>
+                                    </div>
+                                </div>
+
+                                <!-- Depoimento 6 (visível em todas as telas) -->
+                                <div class="bg-white p-4 sm:p-6 lg:p-8 rounded-2xl shadow-card hover:shadow-hover hover:-translate-y-2 transition-all duration-300 border border-border/50">
+                                    <div class="flex justify-between items-start mb-4">
+                                        <i data-feather="message-circle" class="text-primary/20 w-8 h-8"></i>
+                                        <div class="flex gap-1">
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                        </div>
+                                    </div>
+                                    <p class="text-muted mb-6 leading-relaxed italic">
+                                        "Profissional muito boa, paciente e sabe o que dizer."
+                                    </p>
+                                    <div class="border-t border-border/50 pt-4">
+                                        <div class="font-semibold text-foreground text-sm lg:text-base">Paciente</div>
+                                        <div class="text-xs lg:text-sm text-muted">Feedback real</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 - Desktop: 3 depoimentos, Mobile: 2 depoimentos -->
+                        <div class="w-full flex-shrink-0 px-2 sm:px-4">
+                            <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-8">
+                                <!-- Depoimento 7 -->
+                                <div class="bg-white p-4 sm:p-6 lg:p-8 rounded-2xl shadow-card hover:shadow-hover hover:-translate-y-2 transition-all duration-300 border border-border/50">
+                                    <div class="flex justify-between items-start mb-4">
+                                        <i data-feather="message-circle" class="text-primary/20 w-8 h-8"></i>
+                                        <div class="flex gap-1">
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                        </div>
+                                    </div>
+                                    <p class="text-muted mb-6 leading-relaxed italic">
+                                        "Incrível! A única palavra para definir é que a Nicoly é incrível!"
+                                    </p>
+                                    <div class="border-t border-border/50 pt-4">
+                                        <div class="font-semibold text-foreground text-sm lg:text-base">Paciente</div>
+                                        <div class="text-xs lg:text-sm text-muted">Feedback real</div>
+                                    </div>
+                                </div>
+
+                                <!-- Depoimento 8 (visível em todas as telas) -->
+                                <div class="bg-white p-4 sm:p-6 lg:p-8 rounded-2xl shadow-card hover:shadow-hover hover:-translate-y-2 transition-all duration-300 border border-border/50">
+                                    <div class="flex justify-between items-start mb-4">
+                                        <i data-feather="message-circle" class="text-primary/20 w-8 h-8"></i>
+                                        <div class="flex gap-1">
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                        </div>
+                                    </div>
+                                    <p class="text-muted mb-6 leading-relaxed italic">
+                                        "Uma experiência boa e eficiente."
+                                    </p>
+                                    <div class="border-t border-border/50 pt-4">
+                                        <div class="font-semibold text-foreground text-sm lg:text-base">Paciente</div>
+                                        <div class="text-xs lg:text-sm text-muted">Feedback real</div>
+                                    </div>
+                                </div>
+
+                                <!-- Depoimento 9 (visível em todas as telas) -->
+                                <div class="bg-white p-4 sm:p-6 lg:p-8 rounded-2xl shadow-card hover:shadow-hover hover:-translate-y-2 transition-all duration-300 border border-border/50">
+                                    <div class="flex justify-between items-start mb-4">
+                                        <i data-feather="message-circle" class="text-primary/20 w-8 h-8"></i>
+                                        <div class="flex gap-1">
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                        </div>
+                                    </div>
+                                    <p class="text-muted mb-6 leading-relaxed italic">
+                                        "Ótimo! Profissional muito boa, paciente e sabe o que dizer."
+                                    </p>
+                                    <div class="border-t border-border/50 pt-4">
+                                        <div class="font-semibold text-foreground text-sm lg:text-base">Paciente</div>
+                                        <div class="text-xs lg:text-sm text-muted">Feedback real</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 4 - Desktop: 3 depoimentos, Mobile: 2 depoimentos -->
+                        <div class="w-full flex-shrink-0 px-2 sm:px-4">
+                            <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-8">
+                                <!-- Depoimento 10 -->
+                                <div class="bg-white p-4 sm:p-6 lg:p-8 rounded-2xl shadow-card hover:shadow-hover hover:-translate-y-2 transition-all duration-300 border border-border/50">
+                                    <div class="flex justify-between items-start mb-4">
+                                        <i data-feather="message-circle" class="text-primary/20 w-8 h-8"></i>
+                                        <div class="flex gap-1">
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                        </div>
+                                    </div>
+                                    <p class="text-muted mb-6 leading-relaxed italic">
+                                        "Muito confortante soube me ouvir dialogar ajudou me nas minhas ações que eu tanto procrastinava."
+                                    </p>
+                                    <div class="border-t border-border/50 pt-4">
+                                        <div class="font-semibold text-foreground text-sm lg:text-base">Paciente</div>
+                                        <div class="text-xs lg:text-sm text-muted">Feedback real</div>
+                                    </div>
+                                </div>
+
+                                <!-- Depoimento 11 (visível em todas as telas) -->
+                                <div class="bg-white p-4 sm:p-6 lg:p-8 rounded-2xl shadow-card hover:shadow-hover hover:-translate-y-2 transition-all duration-300 border border-border/50">
+                                    <div class="flex justify-between items-start mb-4">
+                                        <i data-feather="message-circle" class="text-primary/20 w-8 h-8"></i>
+                                        <div class="flex gap-1">
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                        </div>
+                                    </div>
+                                    <p class="text-muted mb-6 leading-relaxed italic">
+                                        "Excelente! Passa muita confiança, sempre atenta aos detalhes, transmite confiança até na fala."
+                                    </p>
+                                    <div class="border-t border-border/50 pt-4">
+                                        <div class="font-semibold text-foreground text-sm lg:text-base">Paciente</div>
+                                        <div class="text-xs lg:text-sm text-muted">Feedback real</div>
+                                    </div>
+                                </div>
+
+                                <!-- Depoimento 12 (visível em todas as telas) -->
+                                <div class="bg-white p-4 sm:p-6 lg:p-8 rounded-2xl shadow-card hover:shadow-hover hover:-translate-y-2 transition-all duration-300 border border-border/50">
+                                    <div class="flex justify-between items-start mb-4">
+                                        <i data-feather="message-circle" class="text-primary/20 w-8 h-8"></i>
+                                        <div class="flex gap-1">
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                            <span class="text-yellow-400 text-lg">★</span>
+                                        </div>
+                                    </div>
+                                    <p class="text-muted mb-6 leading-relaxed italic">
+                                        "Maravilhoso! Indico ela a todas as pessoas que conheço."
+                                    </p>
+                                    <div class="border-t border-border/50 pt-4">
+                                        <div class="font-semibold text-foreground text-sm lg:text-base">Paciente</div>
+                                        <div class="text-xs lg:text-sm text-muted">Feedback real</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Depoimento 2 -->
-                <div
-                    class="bg-white p-6 lg:p-8 rounded-2xl shadow-card hover:shadow-hover hover:-translate-y-2 transition-all duration-300 border border-border/50">
-                    <div class="flex justify-between items-start mb-4">
-                        <i data-feather="message-circle" class="text-primary/20 w-8 h-8"></i>
-                        <div class="flex gap-1">
-                            <span class="text-yellow-400 text-lg">★</span>
-                            <span class="text-yellow-400 text-lg">★</span>
-                            <span class="text-yellow-400 text-lg">★</span>
-                            <span class="text-yellow-400 text-lg">★</span>
-                            <span class="text-yellow-400 text-lg">★</span>
-                        </div>
-                    </div>
-                    <p class="text-muted mb-6 leading-relaxed italic">
-                        "Amei muito"
-                    </p>
-                    <div class="border-t border-border/50 pt-4">
-                        <div class="font-semibold text-foreground text-sm lg:text-base">Paciente</div>
-                        <div class="text-xs lg:text-sm text-muted">Feedback real</div>
-                    </div>
-                </div>
+                <!-- Navigation Arrows -->
+                <button id="prev-btn" class="absolute left-0 top-1/2 -translate-y-1/2 w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 bg-white/90 backdrop-blur-md border border-white/20 text-foreground rounded-full shadow-xl hover:shadow-2xl hover:bg-white transition-all duration-300 flex items-center justify-center hover:scale-110 z-10 transform -translate-x-1/2">
+                    <i data-feather="chevron-left" class="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 text-primary"></i>
+                </button>
+                
+                <button id="next-btn" class="absolute right-0 top-1/2 -translate-y-1/2 w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 bg-white/90 backdrop-blur-md border border-white/20 text-foreground rounded-full shadow-xl hover:shadow-2xl hover:bg-white transition-all duration-300 flex items-center justify-center hover:scale-110 z-10 transform translate-x-1/2">
+                    <i data-feather="chevron-right" class="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 text-primary"></i>
+                </button>
 
-                <!-- Depoimento 3 -->
-                <div
-                    class="bg-white p-6 lg:p-8 rounded-2xl shadow-card hover:shadow-hover hover:-translate-y-2 transition-all duration-300 border border-border/50">
-                    <div class="flex justify-between items-start mb-4">
-                        <i data-feather="message-circle" class="text-primary/20 w-8 h-8"></i>
-                        <div class="flex gap-1">
-                            <span class="text-yellow-400 text-lg">★</span>
-                            <span class="text-yellow-400 text-lg">★</span>
-                            <span class="text-yellow-400 text-lg">★</span>
-                            <span class="text-yellow-400 text-lg">★</span>
-                            <span class="text-yellow-400 text-lg">★</span>
-                        </div>
-                    </div>
-                    <p class="text-muted mb-6 leading-relaxed italic">
-                        "Atendimento muito bom, muito respeitosa, solícita e empática"
-                    </p>
-                    <div class="border-t border-border/50 pt-4">
-                        <div class="font-semibold text-foreground text-sm lg:text-base">Paciente</div>
-                        <div class="text-xs lg:text-sm text-muted">Feedback real</div>
-                    </div>
-                </div>
-
-                <!-- Depoimento 4 -->
-                <div
-                    class="bg-white p-6 lg:p-8 rounded-2xl shadow-card hover:shadow-hover hover:-translate-y-2 transition-all duration-300 border border-border/50">
-                    <div class="flex justify-between items-start mb-4">
-                        <i data-feather="message-circle" class="text-primary/20 w-8 h-8"></i>
-                        <div class="flex gap-1">
-                            <span class="text-yellow-400 text-lg">★</span>
-                            <span class="text-yellow-400 text-lg">★</span>
-                            <span class="text-yellow-400 text-lg">★</span>
-                            <span class="text-yellow-400 text-lg">★</span>
-                            <span class="text-yellow-400 text-lg">★</span>
-                        </div>
-                    </div>
-                    <p class="text-muted mb-6 leading-relaxed italic">
-                        "Muito bom"
-                    </p>
-                    <div class="border-t border-border/50 pt-4">
-                        <div class="font-semibold text-foreground text-sm lg:text-base">Paciente</div>
-                        <div class="text-xs lg:text-sm text-muted">Feedback real</div>
-                    </div>
-                </div>
-
-                <!-- Depoimento 5 -->
-                <div
-                    class="bg-white p-6 lg:p-8 rounded-2xl shadow-card hover:shadow-hover hover:-translate-y-2 transition-all duration-300 border border-border/50">
-                    <div class="flex justify-between items-start mb-4">
-                        <i data-feather="message-circle" class="text-primary/20 w-8 h-8"></i>
-                        <div class="flex gap-1">
-                            <span class="text-yellow-400 text-lg">★</span>
-                            <span class="text-yellow-400 text-lg">★</span>
-                            <span class="text-yellow-400 text-lg">★</span>
-                            <span class="text-yellow-400 text-lg">★</span>
-                            <span class="text-yellow-400 text-lg">★</span>
-                        </div>
-                    </div>
-                    <p class="text-muted mb-6 leading-relaxed italic">
-                        "Excelente"
-                    </p>
-                    <div class="border-t border-border/50 pt-4">
-                        <div class="font-semibold text-foreground text-sm lg:text-base">Paciente</div>
-                        <div class="text-xs lg:text-sm text-muted">Feedback real</div>
-                    </div>
-                </div>
-
-                <!-- Depoimento 6 -->
-                <div
-                    class="bg-white p-6 lg:p-8 rounded-2xl shadow-card hover:shadow-hover hover:-translate-y-2 transition-all duration-300 border border-border/50">
-                    <div class="flex justify-between items-start mb-4">
-                        <i data-feather="message-circle" class="text-primary/20 w-8 h-8"></i>
-                        <div class="flex gap-1">
-                            <span class="text-yellow-400 text-lg">★</span>
-                            <span class="text-yellow-400 text-lg">★</span>
-                            <span class="text-yellow-400 text-lg">★</span>
-                            <span class="text-yellow-400 text-lg">★</span>
-                            <span class="text-yellow-400 text-lg">★</span>
-                        </div>
-                    </div>
-                    <p class="text-muted mb-6 leading-relaxed italic">
-                        "Ótimo"
-                    </p>
-                    <div class="border-t border-border/50 pt-4">
-                        <div class="font-semibold text-foreground text-sm lg:text-base">Paciente</div>
-                        <div class="text-xs lg:text-sm text-muted">Feedback real</div>
-                    </div>
+                <!-- Dots Indicator -->
+                <div class="flex justify-center mt-4 sm:mt-6 lg:mt-8 space-x-1.5 sm:space-x-2 lg:space-x-3">
+                    <button class="dot-indicator rounded-full transition-all duration-300 hover:scale-110 active-dot" data-slide="0"></button>
+                    <button class="dot-indicator rounded-full transition-all duration-300 hover:scale-110" data-slide="1"></button>
+                    <button class="dot-indicator rounded-full transition-all duration-300 hover:scale-110" data-slide="2"></button>
+                    <button class="dot-indicator rounded-full transition-all duration-300 hover:scale-110" data-slide="3"></button>
                 </div>
             </div>
 
@@ -960,7 +1124,7 @@
                                 <div>
                                     <h4 class="font-semibold text-foreground text-base lg:text-lg mb-1">Horários de
                                         Atendimento</h4>
-                                    <p class="text-muted text-sm lg:text-base">Segunda a Sexta: 20h às 20h<br>Sábados:
+                                    <p class="text-muted text-sm lg:text-base">Segunda a Sexta: 8h às 20h<br>Sábados:
                                         9h
                                         às 12h</p>
                                 </div>
@@ -1101,6 +1265,151 @@
                 function openGoogleMaps() {
                     window.open("https://www.google.com/maps?q=Ark'tetura+Humana+-+Rua+Ant%C3%B4nio+Major+Domingues,+357+-+Centro,+S%C3%A3o+Jos%C3%A9+dos+Campos+-+SP", "_blank");
                 }
+
+                // Testimonials Carousel
+                document.addEventListener('DOMContentLoaded', function() {
+                    const carousel = document.getElementById('testimonials-carousel');
+                    const prevBtn = document.getElementById('prev-btn');
+                    const nextBtn = document.getElementById('next-btn');
+                    const dots = document.querySelectorAll('[data-slide]');
+                    
+                    let currentSlide = 0;
+                    const totalSlides = 4;
+                    
+                    // Auto-play functionality
+                    let autoPlayInterval;
+                    
+                    function startAutoPlay() {
+                        autoPlayInterval = setInterval(() => {
+                            nextSlide();
+                        }, 6000); // Change slide every 6 seconds
+                    }
+                    
+                    function stopAutoPlay() {
+                        clearInterval(autoPlayInterval);
+                    }
+                    
+                    function goToSlide(slideIndex) {
+                        currentSlide = slideIndex;
+                        const translateX = -slideIndex * 100;
+                        carousel.style.transform = `translateX(${translateX}%)`;
+                        
+                        // Update dots
+                        dots.forEach((dot, index) => {
+                            if (index === slideIndex) {
+                                dot.classList.add('active-dot');
+                                console.log(`Dot ${index} activated`);
+                            } else {
+                                dot.classList.remove('active-dot');
+                                console.log(`Dot ${index} deactivated`);
+                            }
+                        });
+                        
+                        // Update arrow states
+                        prevBtn.style.opacity = currentSlide === 0 ? '0.5' : '1';
+                        nextBtn.style.opacity = currentSlide === totalSlides - 1 ? '0.5' : '1';
+                        
+                        // Add slide transition effect
+                        carousel.style.transition = 'transform 0.7s cubic-bezier(0.4, 0, 0.2, 1)';
+                    }
+                    
+                    function nextSlide() {
+                        if (currentSlide < totalSlides - 1) {
+                            goToSlide(currentSlide + 1);
+                        } else {
+                            goToSlide(0); // Loop back to first slide
+                        }
+                    }
+                    
+                    function prevSlide() {
+                        if (currentSlide > 0) {
+                            goToSlide(currentSlide - 1);
+                        } else {
+                            goToSlide(totalSlides - 1); // Loop to last slide
+                        }
+                    }
+                    
+                    // Event listeners
+                    prevBtn.addEventListener('click', () => {
+                        prevSlide();
+                        stopAutoPlay();
+                        startAutoPlay(); // Restart auto-play
+                    });
+                    
+                    nextBtn.addEventListener('click', () => {
+                        nextSlide();
+                        stopAutoPlay();
+                        startAutoPlay(); // Restart auto-play
+                    });
+                    
+                    // Dot navigation
+                    dots.forEach((dot, index) => {
+                        dot.addEventListener('click', () => {
+                            goToSlide(index);
+                            stopAutoPlay();
+                            startAutoPlay(); // Restart auto-play
+                        });
+                    });
+                    
+                    // Keyboard navigation
+                    document.addEventListener('keydown', (e) => {
+                        if (e.key === 'ArrowLeft') {
+                            prevSlide();
+                            stopAutoPlay();
+                            startAutoPlay();
+                        } else if (e.key === 'ArrowRight') {
+                            nextSlide();
+                            stopAutoPlay();
+                            startAutoPlay();
+                        }
+                    });
+                    
+                    // Touch/swipe support for mobile
+                    let startX = 0;
+                    let endX = 0;
+                    let startY = 0;
+                    let endY = 0;
+                    
+                    carousel.addEventListener('touchstart', (e) => {
+                        startX = e.touches[0].clientX;
+                        startY = e.touches[0].clientY;
+                    });
+                    
+                    carousel.addEventListener('touchend', (e) => {
+                        endX = e.changedTouches[0].clientX;
+                        endY = e.changedTouches[0].clientY;
+                        handleSwipe();
+                    });
+                    
+                    function handleSwipe() {
+                        const swipeThreshold = 25; // Reduced threshold for mobile
+                        const diffX = startX - endX;
+                        const diffY = startY - endY;
+                        
+                        // Only trigger if horizontal swipe is more significant than vertical
+                        if (Math.abs(diffX) > swipeThreshold && Math.abs(diffX) > Math.abs(diffY)) {
+                            if (diffX > 0) {
+                                // Swiped left - next slide
+                                nextSlide();
+                            } else {
+                                // Swiped right - previous slide
+                                prevSlide();
+                            }
+                            stopAutoPlay();
+                            startAutoPlay();
+                        }
+                    }
+                    
+                    // Pause auto-play on hover
+                    carousel.addEventListener('mouseenter', stopAutoPlay);
+                    carousel.addEventListener('mouseleave', startAutoPlay);
+                    
+                    // Initialize
+                    console.log('Carousel initialized, total slides:', totalSlides);
+                    console.log('Found dots:', dots.length);
+                    goToSlide(0);
+                    startAutoPlay();
+                });
             </script>
 
         </div>
@@ -1116,7 +1425,7 @@
                     <h3 class="text-xl lg:text-2xl font-semibold">Psicóloga Nicolly Contro Ferreira</h3>
                     <p class="text-white/80 text-sm lg:text-base">CRP 06/202060</p>
                     <p class="text-white/80 text-sm lg:text-base leading-relaxed">
-                        Psicóloga clínica especializada em Terapia Cognitivo-Comportamental,
+                        Psicóloga clínica em Terapia Cognitivo-Comportamental,
                         oferecendo acompanhamento psicológico humanizado e acolhedor para
                         adultos, com foco em ansiedade, depressão, burnout e psicologia perinatal.
                     </p>
@@ -1170,7 +1479,7 @@
                         </div>
                         <div>
                             <strong>Horários:</strong><br>
-                            Segunda a Sexta: 20h às 20h<br>
+                            Segunda a Sexta: 8h às 20h<br>
                             Sábados: 9h às 12h
                         </div>
                     </div>
