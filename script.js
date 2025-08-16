@@ -362,12 +362,11 @@ function initTypewriter() {
     const phrases = [
         'vida mais equilibrada',
         'mente mais tranquila',
-        'jornada de autoconhecimento',
-        'experiência transformadora',
-        'caminhada de crescimento',
+        'jornada de evolução',
+        'experiência única',
         'busca pela harmonia',
-        'conexão com seu potencial',
-        'descoberta de si mesma'
+        'conexão com seu eu',
+        'descoberta pessoal'
     ];
     
     let currentPhraseIndex = 0;
